@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08F2B42B1DE54BE10075AEB3 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F2B4231DE54BE10075AEB3 /* User+CoreDataClass.swift */; };
+		08F2B42C1DE54BE10075AEB3 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F2B4241DE54BE10075AEB3 /* User+CoreDataProperties.swift */; };
+		08F2B42D1DE54BE10075AEB3 /* Wallet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F2B4251DE54BE10075AEB3 /* Wallet+CoreDataClass.swift */; };
+		08F2B42E1DE54BE10075AEB3 /* Wallet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F2B4261DE54BE10075AEB3 /* Wallet+CoreDataProperties.swift */; };
+		08F2B42F1DE54BE10075AEB3 /* Transaction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F2B4271DE54BE10075AEB3 /* Transaction+CoreDataClass.swift */; };
+		08F2B4301DE54BE10075AEB3 /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F2B4281DE54BE10075AEB3 /* Transaction+CoreDataProperties.swift */; };
+		08F2B4311DE54BE10075AEB3 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F2B4291DE54BE10075AEB3 /* Category+CoreDataClass.swift */; };
+		08F2B4321DE54BE10075AEB3 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F2B42A1DE54BE10075AEB3 /* Category+CoreDataProperties.swift */; };
 		14DA31301DE41EF7003D8390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA31201DE41EF7003D8390 /* AppDelegate.swift */; };
 		14DA31311DE41EF7003D8390 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA31221DE41EF7003D8390 /* ViewController.swift */; };
 		14DA31321DE41EF7003D8390 /* MoneyLover.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14DA31251DE41EF7003D8390 /* MoneyLover.xcdatamodeld */; };
@@ -16,6 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08F2B4231DE54BE10075AEB3 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		08F2B4241DE54BE10075AEB3 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		08F2B4251DE54BE10075AEB3 /* Wallet+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Wallet+CoreDataClass.swift"; sourceTree = "<group>"; };
+		08F2B4261DE54BE10075AEB3 /* Wallet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Wallet+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		08F2B4271DE54BE10075AEB3 /* Transaction+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataClass.swift"; sourceTree = "<group>"; };
+		08F2B4281DE54BE10075AEB3 /* Transaction+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		08F2B4291DE54BE10075AEB3 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		08F2B42A1DE54BE10075AEB3 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		14DA31061DE41B9D003D8390 /* MoneyLover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyLover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14DA31181DE41B9D003D8390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14DA31201DE41EF7003D8390 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +103,14 @@
 		14DA31231DE41EF7003D8390 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				08F2B4231DE54BE10075AEB3 /* User+CoreDataClass.swift */,
+				08F2B4241DE54BE10075AEB3 /* User+CoreDataProperties.swift */,
+				08F2B4251DE54BE10075AEB3 /* Wallet+CoreDataClass.swift */,
+				08F2B4261DE54BE10075AEB3 /* Wallet+CoreDataProperties.swift */,
+				08F2B4271DE54BE10075AEB3 /* Transaction+CoreDataClass.swift */,
+				08F2B4281DE54BE10075AEB3 /* Transaction+CoreDataProperties.swift */,
+				08F2B4291DE54BE10075AEB3 /* Category+CoreDataClass.swift */,
+				08F2B42A1DE54BE10075AEB3 /* Category+CoreDataProperties.swift */,
 				14DA31241DE41EF7003D8390 /* Coredata */,
 			);
 			path = Models;
@@ -221,8 +245,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08F2B42D1DE54BE10075AEB3 /* Wallet+CoreDataClass.swift in Sources */,
 				14DA31311DE41EF7003D8390 /* ViewController.swift in Sources */,
 				14DA31301DE41EF7003D8390 /* AppDelegate.swift in Sources */,
+				08F2B4311DE54BE10075AEB3 /* Category+CoreDataClass.swift in Sources */,
+				08F2B42B1DE54BE10075AEB3 /* User+CoreDataClass.swift in Sources */,
+				08F2B42F1DE54BE10075AEB3 /* Transaction+CoreDataClass.swift in Sources */,
+				08F2B4321DE54BE10075AEB3 /* Category+CoreDataProperties.swift in Sources */,
+				08F2B4301DE54BE10075AEB3 /* Transaction+CoreDataProperties.swift in Sources */,
+				08F2B42E1DE54BE10075AEB3 /* Wallet+CoreDataProperties.swift in Sources */,
+				08F2B42C1DE54BE10075AEB3 /* User+CoreDataProperties.swift in Sources */,
 				14DA31321DE41EF7003D8390 /* MoneyLover.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +417,7 @@
 				14DA311D1DE41B9D003D8390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
