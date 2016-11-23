@@ -81,4 +81,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 abort()
             }
         }
-    }}
+    }
+}
