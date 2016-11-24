@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="MoneyLover" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rat-8r-hDF">
+                                <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv6-oA-eoH">
+                                        <rect key="frame" x="47" y="20" width="281" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="ktg-XK-Au4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="titleEdgeInsets" minX="11" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="-22" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Đăng nhập bằng Facebook" image="ic_facebook_small">
+                                            <color key="titleColor" red="0.2901960784" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginFBAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t7A-S5-noe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8C-tV-1NL">
+                                        <rect key="frame" x="47" y="74" width="281" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="8We-As-MHU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="titleEdgeInsets" minX="-1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="-74" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Kết nối với Google" image="ic_google_small">
+                                            <color key="titleColor" red="1" green="0.1176470588" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="LoginGoogleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mp1-Xy-fmm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vX-en-5CF">
+                                        <rect key="frame" x="47" y="128" width="281" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="EIN-wM-ghx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Đăng ký hoặc đăng nhập bằng Email">
+                                            <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signinSignupEmailAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bbd-yg-JnY"/>
+                                            <segue destination="NrH-MO-7J2" kind="show" id="unI-im-wE0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gv6-oA-eoH" firstAttribute="top" secondItem="rat-8r-hDF" secondAttribute="top" constant="20" id="F3j-ZY-tXn"/>
+                                    <constraint firstItem="gv6-oA-eoH" firstAttribute="centerX" secondItem="rat-8r-hDF" secondAttribute="centerX" id="Nhy-sP-fnh"/>
+                                    <constraint firstItem="gv6-oA-eoH" firstAttribute="width" secondItem="rat-8r-hDF" secondAttribute="width" multiplier="3:4" id="aBN-bm-68f"/>
+                                    <constraint firstItem="e8C-tV-1NL" firstAttribute="centerX" secondItem="rat-8r-hDF" secondAttribute="centerX" id="dqw-bJ-1G1"/>
+                                    <constraint firstItem="e8C-tV-1NL" firstAttribute="width" secondItem="rat-8r-hDF" secondAttribute="width" multiplier="3:4" id="eeY-mk-u0Y"/>
+                                    <constraint firstItem="e8C-tV-1NL" firstAttribute="top" secondItem="gv6-oA-eoH" secondAttribute="bottom" constant="20" id="fzU-cF-yBc"/>
+                                    <constraint firstItem="8vX-en-5CF" firstAttribute="width" secondItem="rat-8r-hDF" secondAttribute="width" multiplier="3:4" id="gL4-4C-NGr"/>
+                                    <constraint firstItem="8vX-en-5CF" firstAttribute="top" secondItem="e8C-tV-1NL" secondAttribute="bottom" constant="20" id="gWQ-7x-44V"/>
+                                    <constraint firstItem="8vX-en-5CF" firstAttribute="centerX" secondItem="rat-8r-hDF" secondAttribute="centerX" id="lKP-fo-UVl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.99994051456451416" blue="0.99998033046722412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rat-8r-hDF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2nV-1V-H4Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rat-8r-hDF" secondAttribute="bottom" id="4Z4-0W-C1Y"/>
+                            <constraint firstItem="rat-8r-hDF" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:3" id="cYo-pJ-dmu"/>
+                            <constraint firstAttribute="trailing" secondItem="rat-8r-hDF" secondAttribute="trailing" id="kHv-Vv-rDj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginFBButton" destination="gv6-oA-eoH" id="IGf-mc-h9z"/>
+                        <outlet property="loginGoogleButton" destination="e8C-tV-1NL" id="m6H-eh-D1B"/>
+                        <outlet property="signinSignupEmailButton" destination="8vX-en-5CF" id="o2Z-pR-AZH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-391" y="134"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="sW9-Jv-gD6">
+            <objects>
+                <viewController storyboardIdentifier="register" id="ZP8-Rh-AYr" customClass="RegisterViewController" customModule="MoneyLover" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c9B-9X-68g"/>
+                        <viewControllerLayoutGuide type="bottom" id="r43-GT-qfz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dXN-c0-Iq2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="fPS-La-hf7">
+                                <rect key="frame" x="107" y="74" width="161" height="29"/>
+                                <segments>
+                                    <segment title="Đăng ký"/>
+                                    <segment title="Đăng nhập"/>
+                                </segments>
+                                <color key="tintColor" red="0.15294117647058825" green="0.72941176470588232" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changeItemAction:" destination="ZP8-Rh-AYr" eventType="valueChanged" id="9fr-hZ-O23"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật Khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgP-we-4lK">
+                                <rect key="frame" x="62.5" y="162" width="250" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYQ-NO-8Kt">
+                                <rect key="frame" x="125" y="222" width="125" height="30"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.72941176470000002" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Đăng nhập">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAction:" destination="ZP8-Rh-AYr" eventType="touchUpInside" id="3fH-rn-hco"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zIL-uu-68h">
+                                <rect key="frame" x="62.5" y="122" width="250" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wgP-we-4lK" firstAttribute="centerX" secondItem="dXN-c0-Iq2" secondAttribute="centerX" id="Ayk-eS-Vz7"/>
+                            <constraint firstItem="jYQ-NO-8Kt" firstAttribute="centerX" secondItem="dXN-c0-Iq2" secondAttribute="centerX" id="IwG-sk-e3f"/>
+                            <constraint firstItem="wgP-we-4lK" firstAttribute="top" secondItem="zIL-uu-68h" secondAttribute="bottom" constant="10" id="MZt-Io-PKS"/>
+                            <constraint firstItem="wgP-we-4lK" firstAttribute="width" secondItem="dXN-c0-Iq2" secondAttribute="width" multiplier="2:3" id="We6-vL-xBo"/>
+                            <constraint firstItem="jYQ-NO-8Kt" firstAttribute="top" secondItem="wgP-we-4lK" secondAttribute="bottom" constant="30" id="Xq7-BZ-jJe"/>
+                            <constraint firstItem="jYQ-NO-8Kt" firstAttribute="width" secondItem="dXN-c0-Iq2" secondAttribute="width" multiplier="1:3" id="dAK-eI-dtO"/>
+                            <constraint firstItem="zIL-uu-68h" firstAttribute="centerX" secondItem="dXN-c0-Iq2" secondAttribute="centerX" id="eT3-Cu-ec3"/>
+                            <constraint firstItem="zIL-uu-68h" firstAttribute="width" secondItem="dXN-c0-Iq2" secondAttribute="width" multiplier="2:3" id="jaR-fD-H6r"/>
+                            <constraint firstItem="fPS-La-hf7" firstAttribute="centerX" secondItem="dXN-c0-Iq2" secondAttribute="centerX" id="moz-fq-6y1"/>
+                            <constraint firstItem="zIL-uu-68h" firstAttribute="top" secondItem="fPS-La-hf7" secondAttribute="bottom" constant="20" id="pkb-up-rcO"/>
+                            <constraint firstItem="fPS-La-hf7" firstAttribute="top" secondItem="c9B-9X-68g" secondAttribute="bottom" constant="10" id="utJ-s4-ep4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ovg-p5-d8Z">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="hJD-Hu-ii3">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="cancelAction:" destination="ZP8-Rh-AYr" id="1N9-oy-ywH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="zIL-uu-68h" id="gw5-9W-t8M"/>
+                        <outlet property="loginButton" destination="jYQ-NO-8Kt" id="Ode-Vu-c1q"/>
+                        <outlet property="loginSegmentControl" destination="fPS-La-hf7" id="IFx-sK-9Ie"/>
+                        <outlet property="passwordTextField" destination="wgP-we-4lK" id="2eN-90-9Ug"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XwJ-4D-NZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1549.5999999999999" y="110.19490254872565"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vEz-lz-qvQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NrH-MO-7J2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" misplaced="YES" id="lWr-eq-EEs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.1529411765" green="0.72941176470000002" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.1529411765" green="0.72941176470000002" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZP8-Rh-AYr" kind="relationship" relationship="rootViewController" id="3KD-vT-Otj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewe-xW-eh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="608.79999999999995" y="109.29535232383809"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_facebook_small" width="24" height="24"/>
+        <image name="ic_google_small" width="24" height="24"/>
+    </resources>
+</document>
