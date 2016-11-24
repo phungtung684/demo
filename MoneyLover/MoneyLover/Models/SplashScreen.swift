@@ -18,6 +18,7 @@ class SplashScreen {
         self.description = description
     }
 }
+
 class SplashScreenData {
     var dataPage = [SplashScreen]()
     

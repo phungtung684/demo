@@ -16,3 +16,13 @@ extension UIView {
         self.layer.borderColor = borderColor
     }
 }
+
+extension UIViewController {
+    
+    func presentAlertWithTitle(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        alertController.addAction(okAction)
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+}
