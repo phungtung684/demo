@@ -61,25 +61,33 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     }
     
     @IBAction func loginFBAction(sender: AnyObject) {
+        LoadingIndicatorView.show(self.view, loadingText: "Loading...")
         FBSDKLoginManager().logInWithReadPermissions(["email"], fromViewController: self) { (result, error) in
             FBSDKGraphRequest(graphPath: "/me", parameters: ["fields": "id, name, email"]).startWithCompletionHandler({ (connection, result, error) in
                 if let userFb = result as? [String: String] {
                     let email =  userFb["email"] ?? ""
                     if self.userManager.checkUserExisted(email) {
-                        self.presentAlertWithTitle("Message", message: "You have a account")
+                        if self.userManager.checkUserLoginSosial(email) {
+                            self.showMainStoryboard()
+                        }
                     } else {
                         if self.userManager.addUserFromSocial(email) {
-                            self.presentAlertWithTitle("Message", message: "Login with Facebook success")
+                            self.showMainStoryboard()
+                            
                         } else {
                             self.presentAlertWithTitle("Error", message: "Failed to add data to context")
                         }
                     }
+                } else {
+                    LoadingIndicatorView.hide()
+                    self.presentAlertWithTitle("Message", message: "Can't connect Facebook")
                 }
             })
         }
     }
     
     @IBAction func LoginGoogleAction(sender: AnyObject) {
+        LoadingIndicatorView.show(self.view, loadingText: "Loading...")
         GIDSignIn.sharedInstance().signIn()
     }
     
@@ -96,22 +104,36 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         result.image = paramImage
         return result
     }
+    
+    private func showMainStoryboard() {
+        if let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate {
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            if let home = mainStoryboard.instantiateViewControllerWithIdentifier("TabbarController") as? UITabBarController {
+                appDelegate.window?.rootViewController = home
+                appDelegate.window?.makeKeyAndVisible()
+                LoadingIndicatorView.hide()
+            }
+        }
+    }
 }
 
 extension LoginViewController: GIDSignInDelegate {
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
         if error == nil {
             if self.userManager.checkUserExisted(user.profile.email) {
-                self.presentAlertWithTitle("Message", message: "You have a account")
+                if self.userManager.checkUserLoginSosial(user.profile.email) {
+                    self.showMainStoryboard()
+                }
             } else {
                 if self.userManager.addUserFromSocial(user.profile.email) {
-                    self.presentAlertWithTitle("Message", message: "Login with Google success")
+                    self.showMainStoryboard()
                 } else {
                     self.presentAlertWithTitle("Error", message: "Failed to add data to context")
                 }
             }
         } else {
-            self.presentAlertWithTitle("Error", message: "Error from server google")
+            LoadingIndicatorView.hide()
+            self.presentAlertWithTitle("Message", message: "Can't connect Google")
         }
     }
 }

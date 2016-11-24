@@ -21,6 +21,7 @@ xcuserdata/
 *.moved-aside
 *.xcuserstate
 *.DS_Store
+MoneyLover/.DS_Store
 
 ## Obj-C/Swift specific
 *.hmap
@@ -65,3 +66,4 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+.DS_Store
