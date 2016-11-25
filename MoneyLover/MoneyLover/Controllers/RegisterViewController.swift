@@ -46,20 +46,20 @@ class RegisterViewController: UIViewController {
     }
     
     private func login() {
-        print("Login")
+        if let email = emailTextField?.text, let password = passwordTextField?.text {
+            if checkTextFields(email, password: password) {
+                if userManager.checkUserLogin(email, password: password) {
+                    presentAlertWithTitle("Success", message: "Login Completed.")
+                } else {
+                    presentAlertWithTitle("Error", message: "Username or password not match")
+                }
+            }
+        }
     }
     
     private func register() {
         if let email = emailTextField?.text, let password = passwordTextField?.text {
-            if email.isBlank || password.isBlank {
-                presentAlertWithTitle("Error", message: "Email or Password not empty")
-            } else if password.characters.count < 6 {
-                presentAlertWithTitle("Error", message: "Password more than 6 letters")
-            } else if email.isEmail {
-                presentAlertWithTitle("Error", message: "Email invalid")
-            } else if password.isCheckSpecialCharacter {
-                presentAlertWithTitle("Error", message: "Password invalid")
-            } else {
+            if checkTextFields(email, password: password) {
                 if userManager.checkUserExisted(email) {
                     presentAlertWithTitle("Error", message: "Email was exist")
                 } else {
@@ -72,6 +72,24 @@ class RegisterViewController: UIViewController {
                     }
                 }
             }
+        }
+    }
+    
+    private func checkTextFields(email: String, password: String) -> Bool {
+        if email.isBlank || password.isBlank {
+            presentAlertWithTitle("Error", message: "Email or Password not empty")
+            return false
+        } else if password.characters.count < 6 {
+            presentAlertWithTitle("Error", message: "Password more than 6 letters")
+            return false
+        } else if email.isNotEmail {
+            presentAlertWithTitle("Error", message: "Email invalid")
+            return false
+        } else if password.isContainSpecialCharacter {
+            presentAlertWithTitle("Error", message: "Password invalid")
+            return false
+        } else {
+            return true
         }
     }
 }
