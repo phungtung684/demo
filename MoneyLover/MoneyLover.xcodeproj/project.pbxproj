@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0890DCE71DE6C1AB007FD3B5 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0890DCE61DE6C1AB007FD3B5 /* CoreDataManager.swift */; };
+		0890DCE91DE6C1ED007FD3B5 /* DataStored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0890DCE81DE6C1ED007FD3B5 /* DataStored.swift */; };
+		0890DCEB1DE6C2BF007FD3B5 /* CheckValidateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0890DCEA1DE6C2BF007FD3B5 /* CheckValidateTextField.swift */; };
+		0890DCED1DE6EF35007FD3B5 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0890DCEC1DE6EF35007FD3B5 /* UserManager.swift */; };
 		142D3F531DE58C40007E2C77 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D3F521DE58C40007E2C77 /* SplashScreen.swift */; };
 		1459356A1DE674B6004BC748 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145935691DE674B6004BC748 /* RegisterViewController.swift */; };
 		1459356C1DE68A1D004BC748 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1459356B1DE68A1D004BC748 /* CustomView.swift */; };
@@ -27,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0890DCE61DE6C1AB007FD3B5 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		0890DCE81DE6C1ED007FD3B5 /* DataStored.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStored.swift; sourceTree = "<group>"; };
+		0890DCEA1DE6C2BF007FD3B5 /* CheckValidateTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckValidateTextField.swift; sourceTree = "<group>"; };
+		0890DCEC1DE6EF35007FD3B5 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		142D3F521DE58C40007E2C77 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		145935691DE674B6004BC748 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1459356B1DE68A1D004BC748 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
@@ -112,6 +120,9 @@
 			children = (
 				14DA31241DE41EF7003D8390 /* Coredata */,
 				142D3F521DE58C40007E2C77 /* SplashScreen.swift */,
+				0890DCE81DE6C1ED007FD3B5 /* DataStored.swift */,
+				0890DCE61DE6C1AB007FD3B5 /* CoreDataManager.swift */,
+				0890DCEC1DE6EF35007FD3B5 /* UserManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -152,6 +163,7 @@
 		14DA312E1DE41EF7003D8390 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0890DCEA1DE6C2BF007FD3B5 /* CheckValidateTextField.swift */,
 				1459356B1DE68A1D004BC748 /* CustomView.swift */,
 			);
 			path = Utils;
@@ -254,11 +266,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0890DCED1DE6EF35007FD3B5 /* UserManager.swift in Sources */,
 				1459357B1DE68A82004BC748 /* Wallet+CoreDataClass.swift in Sources */,
 				145935781DE68A82004BC748 /* Transaction+CoreDataProperties.swift in Sources */,
 				1459356C1DE68A1D004BC748 /* CustomView.swift in Sources */,
+				0890DCEB1DE6C2BF007FD3B5 /* CheckValidateTextField.swift in Sources */,
+				0890DCE71DE6C1AB007FD3B5 /* CoreDataManager.swift in Sources */,
 				1459357A1DE68A82004BC748 /* User+CoreDataProperties.swift in Sources */,
 				1459357C1DE68A82004BC748 /* Wallet+CoreDataProperties.swift in Sources */,
+				0890DCE91DE6C1ED007FD3B5 /* DataStored.swift in Sources */,
 				14DA31311DE41EF7003D8390 /* LoginViewController.swift in Sources */,
 				145935751DE68A82004BC748 /* Category+CoreDataClass.swift in Sources */,
 				142D3F531DE58C40007E2C77 /* SplashScreen.swift in Sources */,
