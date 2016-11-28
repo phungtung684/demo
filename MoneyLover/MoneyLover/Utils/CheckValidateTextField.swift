@@ -17,11 +17,11 @@ extension String {
         }
     }
     
-    var isEmail: Bool {
+    var isNotEmail: Bool {
         return self.rangeOfString("^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}$", options: .RegularExpressionSearch) == nil
     }
     
-    var isCheckSpecialCharacter: Bool {
+    var isContainSpecialCharacter: Bool {
         return self.rangeOfString(".*[^A-Za-z0-9].*", options: .RegularExpressionSearch) != nil
     }
 }
