@@ -26,6 +26,12 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().delegate = self
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("userID")
+        NSUserDefaults.standardUserDefaults().synchronize()
+    }
+    
     private func setupView() {
         let scrollViewRect = CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: (self.view.bounds.size.height * 2) / 3)
         self.scrollView = UIScrollView(frame: scrollViewRect)
