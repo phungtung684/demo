@@ -12,6 +12,7 @@ class AddCategoryViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     let listCellViewAddCategory = DataViewAddCategory()
+    var nameIcon: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,9 +47,17 @@ extension AddCategoryViewController: UITableViewDataSource {
         let viewCategory = listCellViewAddCategory.dataViewCategory[indexPath.row]
         let cell = tableView.dequeueReusableCellWithIdentifier(viewCategory.cellIdentifier, forIndexPath: indexPath)
         if let cellCategory = cell as? InputCategoryCell {
-            cellCategory.configCellWithContent()
+            cellCategory.configCellWithContent(nameIcon)
+            cellCategory.chooseIconCategoryButton.addTarget(self, action: #selector(chooseIcon), forControlEvents: UIControlEvents.TouchUpInside)
         }
         return cell
+    }
+    
+    @objc private func chooseIcon() {
+        if let chooseIcon = self.storyboard?.instantiateViewControllerWithIdentifier("ShowIconViewController") as? ShowIconViewController {
+            chooseIcon.delegate = self
+            self.navigationController?.pushViewController(chooseIcon, animated: true)
+        }
     }
 }
 
@@ -61,5 +70,12 @@ extension AddCategoryViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+}
+
+extension AddCategoryViewController: ChooseIconDelegate {
+    func didChooseIcon(nameIcon: String) {
+        self.nameIcon = nameIcon
+        self.tableView?.reloadData()
     }
 }

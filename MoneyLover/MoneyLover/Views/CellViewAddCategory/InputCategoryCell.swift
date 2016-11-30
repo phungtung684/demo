@@ -9,7 +9,7 @@
 import UIKit
 
 class InputCategoryCell: UITableViewCell {
-
+    
     @IBOutlet weak var chooseIconCategoryButton: UIButton!
     @IBOutlet weak var inputCategoryTextfield: UITextField!
     
@@ -17,7 +17,8 @@ class InputCategoryCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    func configCellWithContent() {
+    func configCellWithContent(nameIcon: String?) {
         inputCategoryTextfield?.borderStyle = UITextBorderStyle.None
+        self.chooseIconCategoryButton?.setImage(UIImage(named: nameIcon ?? "icon_not_selected"), forState: .Normal)
     }
 }
