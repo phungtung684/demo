@@ -11,6 +11,22 @@
 		0890DCE91DE6C1ED007FD3B5 /* DataStored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0890DCE81DE6C1ED007FD3B5 /* DataStored.swift */; };
 		0890DCEB1DE6C2BF007FD3B5 /* CheckValidateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0890DCEA1DE6C2BF007FD3B5 /* CheckValidateTextField.swift */; };
 		0890DCED1DE6EF35007FD3B5 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0890DCEC1DE6EF35007FD3B5 /* UserManager.swift */; };
+		089491571DEBD35A00619E11 /* AddTransaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089491561DEBD35A00619E11 /* AddTransaction.storyboard */; };
+		089491591DEBD3BA00619E11 /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089491581DEBD3BA00619E11 /* AddTransactionViewController.swift */; };
+		089491611DEC122600619E11 /* ViewAddTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089491601DEC122600619E11 /* ViewAddTransaction.swift */; };
+		089491631DEC28F800619E11 /* CustomDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089491621DEC28F800619E11 /* CustomDate.swift */; };
+		08F652891DED5780008A116D /* AmountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652851DED5780008A116D /* AmountCell.swift */; };
+		08F6528A1DED5780008A116D /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652861DED5780008A116D /* CategoryCell.swift */; };
+		08F6528C1DED57FD008A116D /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F6528B1DED57FD008A116D /* NoteCell.swift */; };
+		08F6528E1DED5828008A116D /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F6528D1DED5828008A116D /* DateCell.swift */; };
+		08F652901DED583D008A116D /* WalletCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F6528F1DED583D008A116D /* WalletCell.swift */; };
+		08F652921DED585B008A116D /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652911DED585B008A116D /* LocationCell.swift */; };
+		08F652941DED586A008A116D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652931DED586A008A116D /* PhotoCell.swift */; };
+		08F652961DED5F2E008A116D /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652951DED5F2E008A116D /* EmptyCell.swift */; };
+		08F652981DED5F3F008A116D /* EmptyCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652971DED5F3F008A116D /* EmptyCell1.swift */; };
+		08F6529A1DED5F48008A116D /* EmptyCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652991DED5F48008A116D /* EmptyCell2.swift */; };
+		08F6529C1DED5F51008A116D /* EmptyCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F6529B1DED5F51008A116D /* EmptyCell3.swift */; };
+		08F6529E1DED5F5A008A116D /* EmptyCell4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F6529D1DED5F5A008A116D /* EmptyCell4.swift */; };
 		142D3F531DE58C40007E2C77 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D3F521DE58C40007E2C77 /* SplashScreen.swift */; };
 		144FEF571DE6C13D0078BAB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 144FEF561DE6C13D0078BAB4 /* GoogleService-Info.plist */; };
 		144FEF5A1DE6C88E0078BAB4 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144FEF591DE6C88E0078BAB4 /* LoadingIndicatorView.swift */; };
@@ -31,6 +47,7 @@
 		14DA31371DE4204D003D8390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DA312A1DE41EF7003D8390 /* LaunchScreen.storyboard */; };
 		14DA31381DE42051003D8390 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DA312C1DE41EF7003D8390 /* Login.storyboard */; };
 		63B5A25958366B30C7FBC38B /* Pods_MoneyLover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE78369883E11E8330BD0E1 /* Pods_MoneyLover.framework */; };
+		A83E6E1F1DEC7D260075D90E /* CustomUICorlor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E6E1E1DEC7D260075D90E /* CustomUICorlor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +55,22 @@
 		0890DCE81DE6C1ED007FD3B5 /* DataStored.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStored.swift; sourceTree = "<group>"; };
 		0890DCEA1DE6C2BF007FD3B5 /* CheckValidateTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckValidateTextField.swift; sourceTree = "<group>"; };
 		0890DCEC1DE6EF35007FD3B5 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		089491561DEBD35A00619E11 /* AddTransaction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddTransaction.storyboard; sourceTree = "<group>"; };
+		089491581DEBD3BA00619E11 /* AddTransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
+		089491601DEC122600619E11 /* ViewAddTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAddTransaction.swift; sourceTree = "<group>"; };
+		089491621DEC28F800619E11 /* CustomDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDate.swift; sourceTree = "<group>"; };
+		08F652851DED5780008A116D /* AmountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountCell.swift; sourceTree = "<group>"; };
+		08F652861DED5780008A116D /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		08F6528B1DED57FD008A116D /* NoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		08F6528D1DED5828008A116D /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		08F6528F1DED583D008A116D /* WalletCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletCell.swift; sourceTree = "<group>"; };
+		08F652911DED585B008A116D /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		08F652931DED586A008A116D /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		08F652951DED5F2E008A116D /* EmptyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		08F652971DED5F3F008A116D /* EmptyCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell1.swift; sourceTree = "<group>"; };
+		08F652991DED5F48008A116D /* EmptyCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell2.swift; sourceTree = "<group>"; };
+		08F6529B1DED5F51008A116D /* EmptyCell3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell3.swift; sourceTree = "<group>"; };
+		08F6529D1DED5F5A008A116D /* EmptyCell4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell4.swift; sourceTree = "<group>"; };
 		142D3F521DE58C40007E2C77 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		144FEF561DE6C13D0078BAB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		144FEF581DE6C76C0078BAB4 /* MoneyLover.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoneyLover.entitlements; sourceTree = "<group>"; };
@@ -62,6 +95,7 @@
 		14DA312D1DE41EF7003D8390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		21C2614A347F59FD0DBA8BFB /* Pods-MoneyLover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyLover.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyLover/Pods-MoneyLover.release.xcconfig"; sourceTree = "<group>"; };
 		8DDE7869D720B13C5232327D /* Pods-MoneyLover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyLover.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyLover/Pods-MoneyLover.debug.xcconfig"; sourceTree = "<group>"; };
+		A83E6E1E1DEC7D260075D90E /* CustomUICorlor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUICorlor.swift; sourceTree = "<group>"; };
 		CAE78369883E11E8330BD0E1 /* Pods_MoneyLover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyLover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,6 +111,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08F652821DED5780008A116D /* CellViewTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				08F652851DED5780008A116D /* AmountCell.swift */,
+				08F652861DED5780008A116D /* CategoryCell.swift */,
+				08F6528B1DED57FD008A116D /* NoteCell.swift */,
+				08F6528D1DED5828008A116D /* DateCell.swift */,
+				08F6528F1DED583D008A116D /* WalletCell.swift */,
+				08F652911DED585B008A116D /* LocationCell.swift */,
+				08F652931DED586A008A116D /* PhotoCell.swift */,
+				08F652951DED5F2E008A116D /* EmptyCell.swift */,
+				08F652971DED5F3F008A116D /* EmptyCell1.swift */,
+				08F652991DED5F48008A116D /* EmptyCell2.swift */,
+				08F6529B1DED5F51008A116D /* EmptyCell3.swift */,
+				08F6529D1DED5F5A008A116D /* EmptyCell4.swift */,
+			);
+			path = CellViewTransaction;
+			sourceTree = "<group>";
+		};
 		14DA30FD1DE41B9D003D8390 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +178,7 @@
 			children = (
 				14DA31221DE41EF7003D8390 /* LoginViewController.swift */,
 				145935691DE674B6004BC748 /* RegisterViewController.swift */,
+				089491581DEBD3BA00619E11 /* AddTransactionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -137,6 +191,7 @@
 				0890DCE81DE6C1ED007FD3B5 /* DataStored.swift */,
 				0890DCE61DE6C1AB007FD3B5 /* CoreDataManager.swift */,
 				0890DCEC1DE6EF35007FD3B5 /* UserManager.swift */,
+				089491601DEC122600619E11 /* ViewAddTransaction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,6 +225,7 @@
 			children = (
 				14DA312A1DE41EF7003D8390 /* LaunchScreen.storyboard */,
 				14DA312C1DE41EF7003D8390 /* Login.storyboard */,
+				089491561DEBD35A00619E11 /* AddTransaction.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -179,6 +235,8 @@
 			children = (
 				0890DCEA1DE6C2BF007FD3B5 /* CheckValidateTextField.swift */,
 				1459356B1DE68A1D004BC748 /* CustomView.swift */,
+				089491621DEC28F800619E11 /* CustomDate.swift */,
+				A83E6E1E1DEC7D260075D90E /* CustomUICorlor.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -186,6 +244,7 @@
 		14DA312F1DE41EF7003D8390 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				08F652821DED5780008A116D /* CellViewTransaction */,
 				144FEF591DE6C88E0078BAB4 /* LoadingIndicatorView.swift */,
 			);
 			path = Views;
@@ -277,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089491571DEBD35A00619E11 /* AddTransaction.storyboard in Resources */,
 				14DA31381DE42051003D8390 /* Login.storyboard in Resources */,
 				144FEF571DE6C13D0078BAB4 /* GoogleService-Info.plist in Resources */,
 				14DA31371DE4204D003D8390 /* LaunchScreen.storyboard in Resources */,
@@ -353,22 +413,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				0890DCED1DE6EF35007FD3B5 /* UserManager.swift in Sources */,
+				08F652981DED5F3F008A116D /* EmptyCell1.swift in Sources */,
 				1459357B1DE68A82004BC748 /* Wallet+CoreDataClass.swift in Sources */,
 				145935781DE68A82004BC748 /* Transaction+CoreDataProperties.swift in Sources */,
 				1459356C1DE68A1D004BC748 /* CustomView.swift in Sources */,
 				0890DCEB1DE6C2BF007FD3B5 /* CheckValidateTextField.swift in Sources */,
+				08F652921DED585B008A116D /* LocationCell.swift in Sources */,
 				0890DCE71DE6C1AB007FD3B5 /* CoreDataManager.swift in Sources */,
 				1459357A1DE68A82004BC748 /* User+CoreDataProperties.swift in Sources */,
+				08F6529E1DED5F5A008A116D /* EmptyCell4.swift in Sources */,
+				089491591DEBD3BA00619E11 /* AddTransactionViewController.swift in Sources */,
+				A83E6E1F1DEC7D260075D90E /* CustomUICorlor.swift in Sources */,
+				08F6529A1DED5F48008A116D /* EmptyCell2.swift in Sources */,
 				1459357C1DE68A82004BC748 /* Wallet+CoreDataProperties.swift in Sources */,
 				0890DCE91DE6C1ED007FD3B5 /* DataStored.swift in Sources */,
 				14DA31311DE41EF7003D8390 /* LoginViewController.swift in Sources */,
+				08F6528A1DED5780008A116D /* CategoryCell.swift in Sources */,
 				144FEF5A1DE6C88E0078BAB4 /* LoadingIndicatorView.swift in Sources */,
 				145935751DE68A82004BC748 /* Category+CoreDataClass.swift in Sources */,
 				142D3F531DE58C40007E2C77 /* SplashScreen.swift in Sources */,
+				089491631DEC28F800619E11 /* CustomDate.swift in Sources */,
+				08F652901DED583D008A116D /* WalletCell.swift in Sources */,
 				145935771DE68A82004BC748 /* Transaction+CoreDataClass.swift in Sources */,
+				08F652891DED5780008A116D /* AmountCell.swift in Sources */,
 				14DA31301DE41EF7003D8390 /* AppDelegate.swift in Sources */,
+				089491611DEC122600619E11 /* ViewAddTransaction.swift in Sources */,
+				08F652941DED586A008A116D /* PhotoCell.swift in Sources */,
+				08F652961DED5F2E008A116D /* EmptyCell.swift in Sources */,
 				1459356A1DE674B6004BC748 /* RegisterViewController.swift in Sources */,
+				08F6528E1DED5828008A116D /* DateCell.swift in Sources */,
 				145935791DE68A82004BC748 /* User+CoreDataClass.swift in Sources */,
+				08F6528C1DED57FD008A116D /* NoteCell.swift in Sources */,
+				08F6529C1DED5F51008A116D /* EmptyCell3.swift in Sources */,
 				14DA31321DE41EF7003D8390 /* MoneyLover.xcdatamodeld in Sources */,
 				145935761DE68A82004BC748 /* Category+CoreDataProperties.swift in Sources */,
 			);
