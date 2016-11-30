@@ -23,10 +23,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rat-8r-hDF">
-                                <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
+                                <rect key="frame" x="0.0" y="445" width="375" height="222"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv6-oA-eoH">
-                                        <rect key="frame" x="47" y="20" width="281" height="34"/>
+                                        <rect key="frame" x="47" y="21" width="281" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="ktg-XK-Au4"/>
                                         </constraints>
@@ -41,7 +41,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8C-tV-1NL">
-                                        <rect key="frame" x="47" y="74" width="281" height="34"/>
+                                        <rect key="frame" x="47" y="75" width="281" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="8We-As-MHU"/>
                                         </constraints>
@@ -56,7 +56,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vX-en-5CF">
-                                        <rect key="frame" x="47" y="128" width="281" height="34"/>
+                                        <rect key="frame" x="47" y="129" width="281" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="EIN-wM-ghx"/>
                                         </constraints>
@@ -125,7 +125,7 @@
                                 </connections>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Mật Khẩu" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="wgP-we-4lK">
-                                <rect key="frame" x="62.5" y="162" width="250" height="30"/>
+                                <rect key="frame" x="63" y="162" width="250" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -141,7 +141,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ngotruong@gmail.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="zIL-uu-68h">
-                                <rect key="frame" x="62.5" y="122" width="250" height="30"/>
+                                <rect key="frame" x="63" y="122" width="250" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -186,7 +186,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NrH-MO-7J2" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" misplaced="YES" id="lWr-eq-EEs">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" id="lWr-eq-EEs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.1529411765" green="0.72941176470000002" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

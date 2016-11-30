@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="emptyCell" rowHeight="22" id="aqz-iU-ICd" customClass="EmptyCell" customModule="MoneyLover" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="emptyCell" rowHeight="22" id="aqz-iU-ICd">
                                         <rect key="frame" x="0.0" y="28" width="375" height="22"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aqz-iU-ICd" id="yA1-kZ-zdW">
@@ -34,7 +35,7 @@
                                             <color key="backgroundColor" red="0.92865264627534116" green="0.92865264627534116" blue="0.92865264627534116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="emptyCell1" rowHeight="88" id="fH4-I2-Qam" customClass="EmptyCell1" customModule="MoneyLover" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="emptyCell1" rowHeight="88" id="fH4-I2-Qam">
                                         <rect key="frame" x="0.0" y="50" width="375" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fH4-I2-Qam" id="c3d-rK-qB2">
@@ -86,6 +87,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1h7-dd-0qg" kind="show" identifier="ShowCategoryViewController" id="Gnn-Du-jFp"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NoteCell" rowHeight="44" id="6KX-Ug-bCv" customClass="NoteCell" customModule="MoneyLover" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="292" width="375" height="44"/>
@@ -111,7 +115,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="emptyCell2" rowHeight="22" id="vCP-B8-Yas" customClass="EmptyCell2" customModule="MoneyLover" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="emptyCell2" rowHeight="22" id="vCP-B8-Yas">
                                         <rect key="frame" x="0.0" y="424" width="375" height="22"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vCP-B8-Yas" id="qGW-kO-H2a">
@@ -128,7 +132,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="emptyCell3" rowHeight="22" id="VDW-wC-7QW" customClass="EmptyCell3" customModule="MoneyLover" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="emptyCell3" rowHeight="22" id="VDW-wC-7QW">
                                         <rect key="frame" x="0.0" y="490" width="375" height="22"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VDW-wC-7QW" id="FsV-MN-wbd">
@@ -145,7 +149,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="emptyCell4" rowHeight="22" id="dsk-jX-8j9" customClass="EmptyCell4" customModule="MoneyLover" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="emptyCell4" rowHeight="22" id="dsk-jX-8j9">
                                         <rect key="frame" x="0.0" y="556" width="375" height="22"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dsk-jX-8j9" id="U2Q-Vh-Vaq">
@@ -174,5 +178,171 @@
             </objects>
             <point key="canvasLocation" x="-522" y="-152"/>
         </scene>
+        <!--Show Category View Controller-->
+        <scene sceneID="I1o-5c-mxT">
+            <objects>
+                <viewController storyboardIdentifier="ShowCategoryViewController" id="1h7-dd-0qg" customClass="ShowCategoryViewController" customModule="MoneyLover" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yf0-jx-8uv"/>
+                        <viewControllerLayoutGuide type="bottom" id="xVf-Dd-fxP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PWQ-5I-n24">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZDX-lM-zdp">
+                                <rect key="frame" x="63" y="30" width="250" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Iw2-hf-n3o"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Debt/Loan"/>
+                                    <segment title="Expense"/>
+                                    <segment title="Income"/>
+                                </segments>
+                                <color key="tintColor" red="0.043162681823635252" green="0.64842178165736042" blue="0.10396472498079459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EoU-bp-nwD">
+                                <rect key="frame" x="0.0" y="66" width="375" height="601"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="k1J-aJ-bxu" customClass="ShowCategoryTableViewCell" customModule="MoneyLover" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k1J-aJ-bxu" id="YWd-FD-lQV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EoU-bp-nwD" secondAttribute="trailing" id="C2f-eU-8q6"/>
+                            <constraint firstItem="ZDX-lM-zdp" firstAttribute="width" secondItem="PWQ-5I-n24" secondAttribute="width" multiplier="2:3" id="Jh5-xD-efd"/>
+                            <constraint firstItem="ZDX-lM-zdp" firstAttribute="centerX" secondItem="PWQ-5I-n24" secondAttribute="centerX" id="Urs-W9-Oi6"/>
+                            <constraint firstItem="ZDX-lM-zdp" firstAttribute="top" secondItem="yf0-jx-8uv" secondAttribute="bottom" constant="10" id="bdS-lV-GsH"/>
+                            <constraint firstItem="EoU-bp-nwD" firstAttribute="leading" secondItem="PWQ-5I-n24" secondAttribute="leading" id="m9T-mt-0H1"/>
+                            <constraint firstItem="xVf-Dd-fxP" firstAttribute="top" secondItem="EoU-bp-nwD" secondAttribute="bottom" id="pBw-ar-tka"/>
+                            <constraint firstItem="EoU-bp-nwD" firstAttribute="top" secondItem="ZDX-lM-zdp" secondAttribute="bottom" constant="8" id="wAd-rP-H8J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="EoU-bp-nwD" id="TuA-84-0jR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OXA-39-Yw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.80000000000001" y="-152.47376311844079"/>
+        </scene>
+        <!--Add Category View Controller-->
+        <scene sceneID="ue1-h7-RyD">
+            <objects>
+                <viewController storyboardIdentifier="AddCategoryViewController" id="V8z-eX-ZLm" customClass="AddCategoryViewController" customModule="MoneyLover" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rcJ-lY-fC2"/>
+                        <viewControllerLayoutGuide type="bottom" id="iA5-rE-p2S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NcP-Q3-Hoe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mNK-kb-S4R">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="22" id="WDn-19-nY6">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="22"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WDn-19-nY6" id="Fxz-3d-xHF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.93085739213197971" green="0.93085739213197971" blue="0.93085739213197971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="qPa-8y-gWR">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="88"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qPa-8y-gWR" id="dIO-yh-Zhu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="3q4-ro-cun">
+                                        <rect key="frame" x="0.0" y="138" width="375" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3q4-ro-cun" id="5F9-nN-1zW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Category Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mHF-uY-yBp">
+                                                    <rect key="frame" x="73" y="17" width="294" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVG-UM-cHd">
+                                                    <rect key="frame" x="8" y="8" width="57" height="49"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button" image="icon_not_selected"/>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jif-62-114">
+                                        <rect key="frame" x="0.0" y="204" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jif-62-114" id="kM7-No-VFg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Income/Expense:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfL-tN-R6E">
+                                                    <rect key="frame" x="17" y="11" width="132" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eOd-En-lmz">
+                                                    <rect key="frame" x="239" y="7" width="121" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <segments>
+                                                        <segment title="Income"/>
+                                                        <segment title="Expense"/>
+                                                    </segments>
+                                                    <color key="tintColor" red="0.04316268182" green="0.64842178169999998" blue="0.10396472499999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </segmentedControl>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="cUb-Oe-Cdk">
+                                        <rect key="frame" x="0.0" y="248" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cUb-Oe-Cdk" id="T6q-PT-fiq">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mNK-kb-S4R" firstAttribute="top" secondItem="NcP-Q3-Hoe" secondAttribute="top" id="Crz-cV-MAM"/>
+                            <constraint firstItem="iA5-rE-p2S" firstAttribute="top" secondItem="mNK-kb-S4R" secondAttribute="bottom" id="ISW-SQ-R3l"/>
+                            <constraint firstItem="mNK-kb-S4R" firstAttribute="leading" secondItem="NcP-Q3-Hoe" secondAttribute="leading" id="b2W-il-N2y"/>
+                            <constraint firstAttribute="trailing" secondItem="mNK-kb-S4R" secondAttribute="trailing" id="sWy-sc-z81"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47J-vd-pq4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="-152.47376311844079"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="icon_not_selected" width="100" height="100"/>
+    </resources>
 </document>

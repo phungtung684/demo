@@ -22,11 +22,9 @@
 		08F652901DED583D008A116D /* WalletCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F6528F1DED583D008A116D /* WalletCell.swift */; };
 		08F652921DED585B008A116D /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652911DED585B008A116D /* LocationCell.swift */; };
 		08F652941DED586A008A116D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652931DED586A008A116D /* PhotoCell.swift */; };
-		08F652961DED5F2E008A116D /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652951DED5F2E008A116D /* EmptyCell.swift */; };
-		08F652981DED5F3F008A116D /* EmptyCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652971DED5F3F008A116D /* EmptyCell1.swift */; };
-		08F6529A1DED5F48008A116D /* EmptyCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652991DED5F48008A116D /* EmptyCell2.swift */; };
-		08F6529C1DED5F51008A116D /* EmptyCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F6529B1DED5F51008A116D /* EmptyCell3.swift */; };
-		08F6529E1DED5F5A008A116D /* EmptyCell4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F6529D1DED5F5A008A116D /* EmptyCell4.swift */; };
+		08F652A01DED73B6008A116D /* ShowCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F6529F1DED73B6008A116D /* ShowCategoryViewController.swift */; };
+		08F652A21DED9167008A116D /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652A11DED9167008A116D /* AddCategoryViewController.swift */; };
+		08F652AA1DED9EB4008A116D /* ShowCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652A91DED9EB4008A116D /* ShowCategoryTableViewCell.swift */; };
 		142D3F531DE58C40007E2C77 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D3F521DE58C40007E2C77 /* SplashScreen.swift */; };
 		144FEF571DE6C13D0078BAB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 144FEF561DE6C13D0078BAB4 /* GoogleService-Info.plist */; };
 		144FEF5A1DE6C88E0078BAB4 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144FEF591DE6C88E0078BAB4 /* LoadingIndicatorView.swift */; };
@@ -66,11 +64,9 @@
 		08F6528F1DED583D008A116D /* WalletCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletCell.swift; sourceTree = "<group>"; };
 		08F652911DED585B008A116D /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		08F652931DED586A008A116D /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
-		08F652951DED5F2E008A116D /* EmptyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
-		08F652971DED5F3F008A116D /* EmptyCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell1.swift; sourceTree = "<group>"; };
-		08F652991DED5F48008A116D /* EmptyCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell2.swift; sourceTree = "<group>"; };
-		08F6529B1DED5F51008A116D /* EmptyCell3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell3.swift; sourceTree = "<group>"; };
-		08F6529D1DED5F5A008A116D /* EmptyCell4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyCell4.swift; sourceTree = "<group>"; };
+		08F6529F1DED73B6008A116D /* ShowCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCategoryViewController.swift; sourceTree = "<group>"; };
+		08F652A11DED9167008A116D /* AddCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
+		08F652A91DED9EB4008A116D /* ShowCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		142D3F521DE58C40007E2C77 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		144FEF561DE6C13D0078BAB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		144FEF581DE6C76C0078BAB4 /* MoneyLover.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoneyLover.entitlements; sourceTree = "<group>"; };
@@ -121,11 +117,6 @@
 				08F6528F1DED583D008A116D /* WalletCell.swift */,
 				08F652911DED585B008A116D /* LocationCell.swift */,
 				08F652931DED586A008A116D /* PhotoCell.swift */,
-				08F652951DED5F2E008A116D /* EmptyCell.swift */,
-				08F652971DED5F3F008A116D /* EmptyCell1.swift */,
-				08F652991DED5F48008A116D /* EmptyCell2.swift */,
-				08F6529B1DED5F51008A116D /* EmptyCell3.swift */,
-				08F6529D1DED5F5A008A116D /* EmptyCell4.swift */,
 			);
 			path = CellViewTransaction;
 			sourceTree = "<group>";
@@ -179,6 +170,8 @@
 				14DA31221DE41EF7003D8390 /* LoginViewController.swift */,
 				145935691DE674B6004BC748 /* RegisterViewController.swift */,
 				089491581DEBD3BA00619E11 /* AddTransactionViewController.swift */,
+				08F6529F1DED73B6008A116D /* ShowCategoryViewController.swift */,
+				08F652A11DED9167008A116D /* AddCategoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,6 +239,7 @@
 			children = (
 				08F652821DED5780008A116D /* CellViewTransaction */,
 				144FEF591DE6C88E0078BAB4 /* LoadingIndicatorView.swift */,
+				08F652A91DED9EB4008A116D /* ShowCategoryTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -412,19 +406,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08F652AA1DED9EB4008A116D /* ShowCategoryTableViewCell.swift in Sources */,
 				0890DCED1DE6EF35007FD3B5 /* UserManager.swift in Sources */,
-				08F652981DED5F3F008A116D /* EmptyCell1.swift in Sources */,
 				1459357B1DE68A82004BC748 /* Wallet+CoreDataClass.swift in Sources */,
+				08F652A21DED9167008A116D /* AddCategoryViewController.swift in Sources */,
 				145935781DE68A82004BC748 /* Transaction+CoreDataProperties.swift in Sources */,
 				1459356C1DE68A1D004BC748 /* CustomView.swift in Sources */,
 				0890DCEB1DE6C2BF007FD3B5 /* CheckValidateTextField.swift in Sources */,
+				08F652A01DED73B6008A116D /* ShowCategoryViewController.swift in Sources */,
 				08F652921DED585B008A116D /* LocationCell.swift in Sources */,
 				0890DCE71DE6C1AB007FD3B5 /* CoreDataManager.swift in Sources */,
 				1459357A1DE68A82004BC748 /* User+CoreDataProperties.swift in Sources */,
-				08F6529E1DED5F5A008A116D /* EmptyCell4.swift in Sources */,
 				089491591DEBD3BA00619E11 /* AddTransactionViewController.swift in Sources */,
 				A83E6E1F1DEC7D260075D90E /* CustomUICorlor.swift in Sources */,
-				08F6529A1DED5F48008A116D /* EmptyCell2.swift in Sources */,
 				1459357C1DE68A82004BC748 /* Wallet+CoreDataProperties.swift in Sources */,
 				0890DCE91DE6C1ED007FD3B5 /* DataStored.swift in Sources */,
 				14DA31311DE41EF7003D8390 /* LoginViewController.swift in Sources */,
@@ -439,12 +433,10 @@
 				14DA31301DE41EF7003D8390 /* AppDelegate.swift in Sources */,
 				089491611DEC122600619E11 /* ViewAddTransaction.swift in Sources */,
 				08F652941DED586A008A116D /* PhotoCell.swift in Sources */,
-				08F652961DED5F2E008A116D /* EmptyCell.swift in Sources */,
 				1459356A1DE674B6004BC748 /* RegisterViewController.swift in Sources */,
 				08F6528E1DED5828008A116D /* DateCell.swift in Sources */,
 				145935791DE68A82004BC748 /* User+CoreDataClass.swift in Sources */,
 				08F6528C1DED57FD008A116D /* NoteCell.swift in Sources */,
-				08F6529C1DED5F51008A116D /* EmptyCell3.swift in Sources */,
 				14DA31321DE41EF7003D8390 /* MoneyLover.xcdatamodeld in Sources */,
 				145935761DE68A82004BC748 /* Category+CoreDataProperties.swift in Sources */,
 			);
