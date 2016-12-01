@@ -73,4 +73,26 @@ class UserManager: NSObject {
         }
         return false
     }
+    
+    func checkUserLoginSosial(email: String) -> Bool {
+        let listUser = dataStored.fetchRecordsForEntity("User", inManagedObjectContext: managedObjectContext)
+        for users in listUser {
+            if let user = users as? User {
+                if user.email == email {
+                    if let userID = NSUserDefaults.standardUserDefaults().stringForKey("userID") {
+                        if userID == user.email {
+                            return true
+                        } else {
+                            NSUserDefaults.standardUserDefaults().setValue(user.email, forKey: "userID")
+                            return true
+                        }
+                    } else {
+                        NSUserDefaults.standardUserDefaults().setValue(user.email, forKey: "userID")
+                        return true
+                    }
+                }
+            }
+        }
+        return false
+    }
 }

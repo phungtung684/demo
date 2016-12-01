@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     lazy var coreDataManager = CoreDataManager()
-    
+
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
         var configureError: NSError?
         GGLContext.sharedInstance().configureWithError(&configureError)
@@ -29,7 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-        print("URL: ", url.scheme)
         if url.scheme == "fb558824467644283" {
             FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
         } else if url.scheme == "com.googleusercontent.apps.43222908773-mhq0odkbf410hs9ac5aa1e7qeihn6bfe" {
@@ -37,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         return false
     }
-    
+
     func applicationWillResignActive(application: UIApplication) {
     }
     

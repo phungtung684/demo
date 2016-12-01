@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="445" width="375" height="222"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv6-oA-eoH">
-                                        <rect key="frame" x="47" y="21" width="281" height="34"/>
+                                        <rect key="frame" x="47" y="20" width="281" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="ktg-XK-Au4"/>
                                         </constraints>
@@ -34,14 +34,14 @@
                                         <inset key="titleEdgeInsets" minX="11" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="-22" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Đăng nhập bằng Facebook" image="ic_facebook_small">
-                                            <color key="titleColor" red="0.2901960784" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.2386920303106308" green="0.59780913591384888" blue="0.95923960208892822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="loginFBAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t7A-S5-noe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8C-tV-1NL">
-                                        <rect key="frame" x="47" y="75" width="281" height="34"/>
+                                        <rect key="frame" x="47" y="74" width="281" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="8We-As-MHU"/>
                                         </constraints>
@@ -49,20 +49,20 @@
                                         <inset key="titleEdgeInsets" minX="-1" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="-74" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Kết nối với Google" image="ic_google_small">
-                                            <color key="titleColor" red="1" green="0.1176470588" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.98614120483398438" green="0.0" blue="0.062846854329109192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="LoginGoogleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mp1-Xy-fmm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vX-en-5CF">
-                                        <rect key="frame" x="47" y="129" width="281" height="34"/>
+                                        <rect key="frame" x="47" y="128" width="281" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="EIN-wM-ghx"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <state key="normal" title="Đăng ký hoặc đăng nhập bằng Email">
-                                            <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.26379796862602234" green="0.2637900710105896" blue="0.26379451155662537" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="signinSignupEmailAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bbd-yg-JnY"/>
@@ -83,7 +83,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.99994051456451416" blue="0.99998033046722412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.99989593029022217" blue="0.99996638298034668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rat-8r-hDF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2nV-1V-H4Q"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rat-8r-hDF" secondAttribute="bottom" id="4Z4-0W-C1Y"/>
@@ -119,7 +119,7 @@
                                     <segment title="Đăng ký"/>
                                     <segment title="Đăng nhập"/>
                                 </segments>
-                                <color key="tintColor" red="0.15294117647058825" green="0.72941176470588232" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.15027855336666107" green="0.69099998474121094" blue="0.26460731029510498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="changeItemAction:" destination="ZP8-Rh-AYr" eventType="valueChanged" id="9fr-hZ-O23"/>
                                 </connections>
@@ -132,9 +132,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYQ-NO-8Kt">
                                 <rect key="frame" x="125" y="222" width="125" height="30"/>
-                                <color key="backgroundColor" red="0.1529411765" green="0.72941176470000002" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.15027855336666107" green="0.69099998474121094" blue="0.26460731029510498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Đăng nhập">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="loginAction:" destination="ZP8-Rh-AYr" eventType="touchUpInside" id="3fH-rn-hco"/>
@@ -147,7 +147,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wgP-we-4lK" firstAttribute="centerX" secondItem="dXN-c0-Iq2" secondAttribute="centerX" id="Ayk-eS-Vz7"/>
                             <constraint firstItem="jYQ-NO-8Kt" firstAttribute="centerX" secondItem="dXN-c0-Iq2" secondAttribute="centerX" id="IwG-sk-e3f"/>
@@ -164,7 +164,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ovg-p5-d8Z">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="hJD-Hu-ii3">
-                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="cancelAction:" destination="ZP8-Rh-AYr" id="1N9-oy-ywH"/>
                             </connections>
@@ -186,11 +186,11 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NrH-MO-7J2" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" id="lWr-eq-EEs">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" misplaced="YES" id="lWr-eq-EEs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.1529411765" green="0.72941176470000002" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.1529411765" green="0.72941176470000002" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.15027855336666107" green="0.69099998474121094" blue="0.26460731029510498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.15027855336666107" green="0.69099998474121094" blue="0.26460731029510498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                         </textAttributes>
