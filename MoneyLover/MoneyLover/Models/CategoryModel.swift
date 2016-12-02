@@ -9,18 +9,50 @@
 import UIKit
 
 class CategoryModel: NSObject {
-
+    
+    //    enum CategoryType: Int {
+    //        case income = 2
+    //        case expense = 1
+    //        case deptLoan = 0
+    //    }
     var nameCategory = ""
     var typeCategory = 0
     var iconCategory = ""
     var idCategory = 0
-    
     
     init(nameCategory: String, typeCategory: Int, iconCategory: String, idCategory: Int) {
         self.nameCategory = nameCategory
         self.typeCategory = typeCategory
         self.iconCategory = iconCategory
         self.idCategory = idCategory
+    }
+    
+    func getTypeString() -> String {
+        if typeCategory == 0 {
+            if nameCategory == "Repayment" || nameCategory == "Loan" {
+                return "Expense"
+            } else {
+                return "Income"
+            }
+        } else if typeCategory == 1 {
+            return "Expense"
+        } else {
+            return "Income"
+        }
+    }
+    
+    func getTypeInt() -> Int {
+        if typeCategory == 0 {
+            if nameCategory == "Repayment" || nameCategory == "Loan" {
+                return 1
+            } else {
+                return 0
+            }
+        } else if typeCategory == 1 {
+            return 1
+        } else {
+            return 0
+        }
     }
 }
 

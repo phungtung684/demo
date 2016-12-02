@@ -25,11 +25,14 @@ class CategoryManager: NSObject {
         return false
     }
     
-    func addCategory(category: CategoryModel) -> Bool {
+    func addCategory(category: CategoryModel) -> CategoryModel? {
         var id = 0
         let listCategory = dataStored.fetchRecordsForEntity("Category", inManagedObjectContext: managedObjectContext)
-        if let lastCategory = listCategory.last as? Category, let idCategories = lastCategory.idCategory as? Int {
-            id = idCategories + 1
+        if let lastCategory = listCategory.last as? Category {
+            if let idCategories = lastCategory.idCategory as? Int {
+                id = idCategories + 1
+                category.idCategory = id
+            }
         }
         if let categories = dataStored.createRecordForEntity("Category", inManagedObjectContext: managedObjectContext) as? Category {
             categories.icon = category.iconCategory
@@ -38,14 +41,52 @@ class CategoryManager: NSObject {
             categories.idCategory = id
             do {
                 try managedObjectContext.save()
-                return true
+                return category
             } catch {
-                return false
+                return nil
+            }
+        }
+        return nil
+    }
+    
+    func updateCategory(categoryModel: CategoryModel) -> Bool {
+        let listCategory = dataStored.fetchRecordsForEntity("Category", inManagedObjectContext: managedObjectContext)
+        for categories in listCategory {
+            if let category = categories as? Category {
+                if category.idCategory == categoryModel.idCategory {
+                    category.name = categoryModel.nameCategory
+                    category.type = categoryModel.typeCategory
+                    category.icon = categoryModel.iconCategory
+                    do {
+                        try managedObjectContext.save()
+                        return true
+                    } catch {
+                        return false
+                    }
+                }
             }
         }
         return false
     }
-
+    
+    func deleteCategory(idCategory: Int) -> Bool {
+        let listCategory = dataStored.fetchRecordsForEntity("Category", inManagedObjectContext: managedObjectContext)
+        for categories in listCategory {
+            if let category = categories as? Category {
+                if category.idCategory == idCategory {
+                    managedObjectContext.deleteObject(category)
+                    do {
+                        try managedObjectContext.save()
+                        return true
+                    } catch {
+                        return false
+                    }
+                }
+            }
+        }
+        return false
+    }
+    
     func addCategoryAvailale(category: CategoryModel) -> Category? {
         if let categories = dataStored.createRecordForEntity("Category", inManagedObjectContext: managedObjectContext) as? Category {
             categories.icon = category.iconCategory
