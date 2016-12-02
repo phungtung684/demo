@@ -45,7 +45,7 @@ class CategoryManager: NSObject {
         }
         return false
     }
-    
+
     func addCategoryAvailale(category: CategoryModel) -> Category? {
         if let categories = dataStored.createRecordForEntity("Category", inManagedObjectContext: managedObjectContext) as? Category {
             categories.icon = category.iconCategory
