@@ -61,7 +61,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     }
     
     @IBAction func loginFBAction(sender: AnyObject) {
-        LoadingIndicatorView.show(self.view, loadingText: "Loading...")
+        LoadingIndicatorView.show(self.view, loadingText: CommonStrings.titleLoadingIndicator)
         FBSDKLoginManager().logInWithReadPermissions(["email"], fromViewController: self) { (result, error) in
             FBSDKGraphRequest(graphPath: "/me", parameters: ["fields": "id, name, email"]).startWithCompletionHandler({ (connection, result, error) in
                 if let userFb = result as? [String: String] {
@@ -87,7 +87,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     }
     
     @IBAction func LoginGoogleAction(sender: AnyObject) {
-        LoadingIndicatorView.show(self.view, loadingText: "Loading...")
+        LoadingIndicatorView.show(self.view, loadingText: CommonStrings.titleLoadingIndicator)
         GIDSignIn.sharedInstance().signIn()
     }
     

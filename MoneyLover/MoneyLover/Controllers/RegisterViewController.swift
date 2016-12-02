@@ -49,12 +49,8 @@ class RegisterViewController: UIViewController {
         if let email = emailTextField?.text, let password = passwordTextField?.text {
             if checkTextFields(email, password: password) {
                 if userManager.checkUserLogin(email, password: password) {
-                    let storyBoard: UIStoryboard? = UIStoryboard(name: "AddTransaction", bundle: nil)
-                    if let addTransaction = storyBoard?.instantiateViewControllerWithIdentifier("AddTransactionViewController") as? AddTransactionViewController {
-                        let navController = UINavigationController(rootViewController: addTransaction)
-                        LoadingIndicatorView.hide()
-                        self.presentViewController(navController, animated:true, completion: nil)
-                    }
+                    self.showMainStoryboard()
+                    LoadingIndicatorView.hide()
                 } else {
                     presentAlertWithTitle("Error", message: "Username or password not match")
                 }
@@ -95,6 +91,17 @@ class RegisterViewController: UIViewController {
             return false
         } else {
             return true
+        }
+    }
+    
+    private func showMainStoryboard() {
+        if let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate {
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            if let home = mainStoryboard.instantiateViewControllerWithIdentifier("TabbarController") as? UITabBarController {
+                appDelegate.window?.rootViewController = home
+                appDelegate.window?.makeKeyAndVisible()
+                LoadingIndicatorView.hide()
+            }
         }
     }
 }

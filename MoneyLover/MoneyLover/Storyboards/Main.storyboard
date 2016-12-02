@@ -101,7 +101,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gxi-Zb-fVh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Sổ giao dịch" image="ic_wallet" selectedImage="ic_wallet" id="u4Q-zf-K3L"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="s7D-xb-MrN">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s7D-xb-MrN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -251,7 +251,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k70-7r-o2h" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Tài khoản" image="ic_bk_option_menu" id="1Rb-CP-cCb"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="L1N-7c-gxP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L1N-7c-gxP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -290,8 +290,8 @@
                                                         <constraint firstAttribute="width" constant="50" id="gJp-q4-ttL"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0I-kV-lBs">
-                                                    <rect key="frame" x="166" y="78" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0I-kV-lBs">
+                                                    <rect key="frame" x="187" y="78" width="0.0" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -374,23 +374,26 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="logout" rowHeight="50" id="wTz-0Q-5ew">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="logout" rowHeight="50" id="wTz-0Q-5ew">
                                         <rect key="frame" x="0.0" y="377" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wTz-0Q-5ew" id="zbt-Ek-VeL">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng xuất" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeZ-rb-szS">
-                                                    <rect key="frame" x="149" y="14" width="78" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTM-wx-oU5">
+                                                    <rect key="frame" x="152" y="9" width="70" height="30"/>
+                                                    <state key="normal" title="Đăng xuất">
+                                                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="logoutAction:" destination="Cgq-Fs-riD" eventType="touchUpInside" id="rjs-lq-EVa"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="xeZ-rb-szS" firstAttribute="centerY" secondItem="zbt-Ek-VeL" secondAttribute="centerY" id="EVQ-pY-VJL"/>
-                                                <constraint firstItem="xeZ-rb-szS" firstAttribute="centerX" secondItem="zbt-Ek-VeL" secondAttribute="centerX" id="m4s-ay-hyr"/>
+                                                <constraint firstItem="LTM-wx-oU5" firstAttribute="centerX" secondItem="zbt-Ek-VeL" secondAttribute="centerX" id="9gX-6o-nFL"/>
+                                                <constraint firstItem="LTM-wx-oU5" firstAttribute="centerY" secondItem="zbt-Ek-VeL" secondAttribute="centerY" id="n0G-nN-5kN"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
