@@ -10,6 +10,8 @@
 		08601B0B1DEE8A4A004EF0F3 /* ViewAddCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08601B0A1DEE8A4A004EF0F3 /* ViewAddCategory.swift */; };
 		08601B141DEE9201004EF0F3 /* InputCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08601B121DEE9201004EF0F3 /* InputCategoryCell.swift */; };
 		08601B151DEE9201004EF0F3 /* TypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08601B131DEE9201004EF0F3 /* TypeCell.swift */; };
+		08601B1B1DEEC692004EF0F3 /* ShowIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08601B1A1DEEC692004EF0F3 /* ShowIconViewController.swift */; };
+		08601B1D1DEED0D8004EF0F3 /* ChooseIconColectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08601B1C1DEED0D8004EF0F3 /* ChooseIconColectionViewCell.swift */; };
 		0890DCE71DE6C1AB007FD3B5 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0890DCE61DE6C1AB007FD3B5 /* CoreDataManager.swift */; };
 		0890DCE91DE6C1ED007FD3B5 /* DataStored.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0890DCE81DE6C1ED007FD3B5 /* DataStored.swift */; };
 		0890DCEB1DE6C2BF007FD3B5 /* CheckValidateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0890DCEA1DE6C2BF007FD3B5 /* CheckValidateTextField.swift */; };
@@ -67,6 +69,8 @@
 		08601B0A1DEE8A4A004EF0F3 /* ViewAddCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAddCategory.swift; sourceTree = "<group>"; };
 		08601B121DEE9201004EF0F3 /* InputCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputCategoryCell.swift; sourceTree = "<group>"; };
 		08601B131DEE9201004EF0F3 /* TypeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeCell.swift; sourceTree = "<group>"; };
+		08601B1A1DEEC692004EF0F3 /* ShowIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowIconViewController.swift; sourceTree = "<group>"; };
+		08601B1C1DEED0D8004EF0F3 /* ChooseIconColectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseIconColectionViewCell.swift; sourceTree = "<group>"; };
 		0890DCE61DE6C1AB007FD3B5 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		0890DCE81DE6C1ED007FD3B5 /* DataStored.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStored.swift; sourceTree = "<group>"; };
 		0890DCEA1DE6C2BF007FD3B5 /* CheckValidateTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckValidateTextField.swift; sourceTree = "<group>"; };
@@ -217,6 +221,7 @@
 				08F652A11DED9167008A116D /* AddCategoryViewController.swift */,
 				149C11921DE744BA0067AAE7 /* ReportViewController.swift */,
 				145FAB2A1DF1109800D71E9B /* AccountTableViewController.swift */,
+				08601B1A1DEEC692004EF0F3 /* ShowIconViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 				146D72791DED194000ED05F7 /* TransactionTableViewCell.xib */,
 				146D727C1DED197000ED05F7 /* HeaderTransactionSection.swift */,
 				146D727E1DED19B300ED05F7 /* HeaderTransactionSection.xib */,
+				08601B1C1DEED0D8004EF0F3 /* ChooseIconColectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -352,7 +358,6 @@
 				TargetAttributes = {
 					14DA31051DE41B9D003D8390 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 5K84G7UAYU;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -471,6 +476,7 @@
 				1459357B1DE68A82004BC748 /* Wallet+CoreDataClass.swift in Sources */,
 				08F652A21DED9167008A116D /* AddCategoryViewController.swift in Sources */,
 				145935781DE68A82004BC748 /* Transaction+CoreDataProperties.swift in Sources */,
+				08601B1B1DEEC692004EF0F3 /* ShowIconViewController.swift in Sources */,
 				1459356C1DE68A1D004BC748 /* CustomView.swift in Sources */,
 				1458386E1DE83BFA00FB269A /* AddNewTransactionViewController.swift in Sources */,
 				146D727A1DED194000ED05F7 /* TransactionTableViewCell.swift in Sources */,
@@ -510,6 +516,7 @@
 				08601B141DEE9201004EF0F3 /* InputCategoryCell.swift in Sources */,
 				14DA31321DE41EF7003D8390 /* MoneyLover.xcdatamodeld in Sources */,
 				145935761DE68A82004BC748 /* Category+CoreDataProperties.swift in Sources */,
+				08601B1D1DEED0D8004EF0F3 /* ChooseIconColectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,7 +647,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MoneyLover/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Framgia.MoneyLover;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -660,7 +667,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MoneyLover/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Framgia.MoneyLover;
 				PRODUCT_NAME = "$(TARGET_NAME)";
