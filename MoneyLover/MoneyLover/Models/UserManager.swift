@@ -95,4 +95,9 @@ class UserManager: NSObject {
         }
         return false
     }
+    
+    func logout() {
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("userID")
+        NSUserDefaults.standardUserDefaults().synchronize()
+    }
 }
