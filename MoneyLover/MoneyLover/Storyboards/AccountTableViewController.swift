@@ -14,9 +14,12 @@ class AccountTableViewController: UITableViewController {
     var userManager = UserManager()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = NSLocalizedString("TitleAccount", comment: "")
         if let userID = NSUserDefaults.standardUserDefaults().stringForKey("userID") {
             emailLabel?.text = userID
         }
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .Done, target: self, action: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,14 +27,14 @@ class AccountTableViewController: UITableViewController {
     }
     
     @IBAction func logoutAction(sender: AnyObject) {
-        let alertController = UIAlertController(title: AlerMessageConstants.logoutConfirmTitle, message: AlerMessageConstants.logoutConfirmMessage, preferredStyle: .Alert)
-        let logoutAction = UIAlertAction(title: ButtonTitleConstants.logout, style: .Default) { (logoutaction) in
-            LoadingIndicatorView.show(self.tableView, loadingText: CommonStrings.titleLoadingIndicator)
+        let alertController = UIAlertController(title: NSLocalizedString("LogoutConfirmTitle", comment: ""), message: NSLocalizedString("LogoutConfirmMessage", comment: ""), preferredStyle: .Alert)
+        let logoutAction = UIAlertAction(title: NSLocalizedString("ButtonTitleLogout", comment: ""), style: .Default) { (logoutaction) in
+            LoadingIndicatorView.show(self.tableView, loadingText: NSLocalizedString("TitleLoadingIndicator", comment: ""))
             self.userManager.logout()
             self.showLoginStoryboard()
         }
         alertController.addAction(logoutAction)
-        let cancelAction = UIAlertAction(title: ButtonTitleConstants.cancel, style: .Default, handler: nil)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("ButtonTitleCancel", comment: ""), style: .Default, handler: nil)
         alertController.addAction(cancelAction)
         self.presentViewController(alertController, animated: true, completion: nil)
     }

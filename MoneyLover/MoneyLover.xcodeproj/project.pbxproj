@@ -47,7 +47,8 @@
 		1459357C1DE68A82004BC748 /* Wallet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145935741DE68A82004BC748 /* Wallet+CoreDataProperties.swift */; };
 		145FAB291DF10F2700D71E9B /* DataViewAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145FAB281DF10F2700D71E9B /* DataViewAccount.swift */; };
 		145FAB2B1DF1109800D71E9B /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145FAB2A1DF1109800D71E9B /* AccountTableViewController.swift */; };
-		145FAB2F1DF1326100D71E9B /* StringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145FAB2E1DF1326100D71E9B /* StringConstant.swift */; };
+		145FAB311DF1504000D71E9B /* ChangePasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145FAB301DF1504000D71E9B /* ChangePasswordTableViewController.swift */; };
+		1461FBFF1DF4FC70006F02E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1461FC011DF4FC70006F02E0 /* Localizable.strings */; };
 		146D72761DED116500ED05F7 /* OverViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146D72741DED116500ED05F7 /* OverViewTableViewCell.swift */; };
 		146D72771DED116500ED05F7 /* OverViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 146D72751DED116500ED05F7 /* OverViewTableViewCell.xib */; };
 		146D727A1DED194000ED05F7 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146D72781DED194000ED05F7 /* TransactionTableViewCell.swift */; };
@@ -108,7 +109,11 @@
 		145935741DE68A82004BC748 /* Wallet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Wallet+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		145FAB281DF10F2700D71E9B /* DataViewAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewAccount.swift; sourceTree = "<group>"; };
 		145FAB2A1DF1109800D71E9B /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountTableViewController.swift; path = ../Storyboards/AccountTableViewController.swift; sourceTree = "<group>"; };
-		145FAB2E1DF1326100D71E9B /* StringConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConstant.swift; sourceTree = "<group>"; };
+		145FAB301DF1504000D71E9B /* ChangePasswordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordTableViewController.swift; sourceTree = "<group>"; };
+		1461FBFD1DF4FC3B006F02E0 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		1461FBFE1DF4FC3B006F02E0 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Login.strings; sourceTree = "<group>"; };
+		1461FC001DF4FC70006F02E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1461FC021DF4FC7B006F02E0 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		146D72741DED116500ED05F7 /* OverViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverViewTableViewCell.swift; sourceTree = "<group>"; };
 		146D72751DED116500ED05F7 /* OverViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverViewTableViewCell.xib; sourceTree = "<group>"; };
 		146D72781DED194000ED05F7 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
@@ -213,6 +218,7 @@
 				149C11921DE744BA0067AAE7 /* ReportViewController.swift */,
 				145FAB2A1DF1109800D71E9B /* AccountTableViewController.swift */,
 				08601B1A1DEEC692004EF0F3 /* ShowIconViewController.swift */,
+				145FAB301DF1504000D71E9B /* ChangePasswordTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -227,9 +233,9 @@
 				0890DCEC1DE6EF35007FD3B5 /* UserManager.swift */,
 				089491601DEC122600619E11 /* ViewAddTransaction.swift */,
 				145FAB281DF10F2700D71E9B /* DataViewAccount.swift */,
-				145FAB2E1DF1326100D71E9B /* StringConstant.swift */,
 				08599B791DF12733003629F8 /* CategoryManager.swift */,
 				08599B7B1DF12E60003629F8 /* CategoryModel.swift */,
+				1461FC011DF4FC70006F02E0 /* Localizable.strings */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -350,6 +356,7 @@
 				TargetAttributes = {
 					14DA31051DE41B9D003D8390 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 5K84G7UAYU;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -367,6 +374,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 14DA30FD1DE41B9D003D8390;
 			productRefGroup = 14DA31071DE41B9D003D8390 /* Products */;
@@ -388,6 +396,7 @@
 				146D727F1DED19B300ED05F7 /* HeaderTransactionSection.xib in Resources */,
 				143BD1001DE7377900764D2F /* Main.storyboard in Resources */,
 				144FEF571DE6C13D0078BAB4 /* GoogleService-Info.plist in Resources */,
+				1461FBFF1DF4FC70006F02E0 /* Localizable.strings in Resources */,
 				14DA31371DE4204D003D8390 /* LaunchScreen.storyboard in Resources */,
 				146D727B1DED194000ED05F7 /* TransactionTableViewCell.xib in Resources */,
 				146D72771DED116500ED05F7 /* OverViewTableViewCell.xib in Resources */,
@@ -465,6 +474,7 @@
 			files = (
 				08F652AA1DED9EB4008A116D /* ShowCategoryTableViewCell.swift in Sources */,
 				0890DCED1DE6EF35007FD3B5 /* UserManager.swift in Sources */,
+				145FAB311DF1504000D71E9B /* ChangePasswordTableViewController.swift in Sources */,
 				1459357B1DE68A82004BC748 /* Wallet+CoreDataClass.swift in Sources */,
 				08F652A21DED9167008A116D /* AddCategoryViewController.swift in Sources */,
 				145935781DE68A82004BC748 /* Transaction+CoreDataProperties.swift in Sources */,
@@ -506,7 +516,6 @@
 				145935791DE68A82004BC748 /* User+CoreDataClass.swift in Sources */,
 				08F6528C1DED57FD008A116D /* NoteCell.swift in Sources */,
 				14DA31321DE41EF7003D8390 /* MoneyLover.xcdatamodeld in Sources */,
-				145FAB2F1DF1326100D71E9B /* StringConstant.swift in Sources */,
 				145935761DE68A82004BC748 /* Category+CoreDataProperties.swift in Sources */,
 				08601B1D1DEED0D8004EF0F3 /* ChooseIconColectionViewCell.swift in Sources */,
 			);
@@ -515,10 +524,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1461FC011DF4FC70006F02E0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1461FC001DF4FC70006F02E0 /* en */,
+				1461FC021DF4FC7B006F02E0 /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		14DA312A1DE41EF7003D8390 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				14DA312B1DE41EF7003D8390 /* Base */,
+				1461FBFD1DF4FC3B006F02E0 /* vi */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -527,6 +546,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				14DA312D1DE41EF7003D8390 /* Base */,
+				1461FBFE1DF4FC3B006F02E0 /* vi */,
 			);
 			name = Login.storyboard;
 			sourceTree = "<group>";
@@ -538,6 +558,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -589,6 +610,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -637,9 +659,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MoneyLover/MoneyLover.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5K84G7UAYU;
 				INFOPLIST_FILE = MoneyLover/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Framgia.MoneyLover;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -657,9 +679,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = MoneyLover/MoneyLover.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5K84G7UAYU;
 				INFOPLIST_FILE = MoneyLover/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Framgia.MoneyLover;
 				PRODUCT_NAME = "$(TARGET_NAME)";

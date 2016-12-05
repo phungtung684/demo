@@ -1,0 +1,30 @@
+
+/* Class = "UIButton"; normalTitle = "Đăng ký hoặc đăng nhập bằng Email"; ObjectID = "8vX-en-5CF"; */
+"8vX-en-5CF.normalTitle" = "Đăng ký hoặc đăng nhập bằng Email";
+
+/* Class = "UIButton"; normalTitle = "Kết nối với Google"; ObjectID = "e8C-tV-1NL"; */
+"e8C-tV-1NL.normalTitle" = "Kết nối với Google";
+
+/* Class = "UISegmentedControl"; fPS-La-hf7.segmentTitles[0] = "Đăng ký"; ObjectID = "fPS-La-hf7"; */
+"fPS-La-hf7.segmentTitles[0]" = "Đăng ký";
+
+/* Class = "UISegmentedControl"; fPS-La-hf7.segmentTitles[1] = "Đăng nhập"; ObjectID = "fPS-La-hf7"; */
+"fPS-La-hf7.segmentTitles[1]" = "Đăng nhập";
+
+/* Class = "UIButton"; normalTitle = "Đăng nhập bằng Facebook"; ObjectID = "gv6-oA-eoH"; */
+"gv6-oA-eoH.normalTitle" = "Đăng nhập bằng Facebook";
+
+/* Class = "UIButton"; normalTitle = "Đăng nhập"; ObjectID = "jYQ-NO-8Kt"; */
+"jYQ-NO-8Kt.normalTitle" = "Đăng nhập";
+
+/* Class = "UITextField"; placeholder = "Mật Khẩu"; ObjectID = "wgP-we-4lK"; */
+"wgP-we-4lK.placeholder" = "Mật Khẩu";
+
+/* Class = "UITextField"; text = "123456"; ObjectID = "wgP-we-4lK"; */
+"wgP-we-4lK.text" = "123456";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "zIL-uu-68h"; */
+"zIL-uu-68h.placeholder" = "Email";
+
+/* Class = "UITextField"; text = "ngotruong@gmail.com"; ObjectID = "zIL-uu-68h"; */
+"zIL-uu-68h.text" = "ngotruong@gmail.com";

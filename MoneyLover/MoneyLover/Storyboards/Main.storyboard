@@ -101,7 +101,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gxi-Zb-fVh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Sổ giao dịch" image="ic_wallet" selectedImage="ic_wallet" id="u4Q-zf-K3L"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s7D-xb-MrN">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="s7D-xb-MrN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -251,9 +251,13 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k70-7r-o2h" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Tài khoản" image="ic_bk_option_menu" id="1Rb-CP-cCb"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L1N-7c-gxP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="L1N-7c-gxP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1176470588" green="0.73725490199999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -262,7 +266,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pry-zB-Kmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1393" y="3654"/>
+            <point key="canvasLocation" x="1332" y="3626"/>
         </scene>
         <!--My Account-->
         <scene sceneID="38C-nQ-M59">
@@ -317,7 +321,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ví của tôi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdt-ea-0BS">
-                                                    <rect key="frame" x="152" y="15" width="71" height="21"/>
+                                                    <rect key="frame" x="152" y="14" width="71" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -337,7 +341,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhóm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puZ-Sj-l0F">
-                                                    <rect key="frame" x="165" y="15" width="46" height="21"/>
+                                                    <rect key="frame" x="165" y="14" width="46" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -373,6 +377,9 @@
                                                 <constraint firstItem="psV-Ih-wfY" firstAttribute="top" secondItem="iEm-Pq-ADs" secondAttribute="topMargin" id="xkc-VT-d7b"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="0tG-3D-E8e" kind="show" id="A2y-FU-FEO"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="logout" rowHeight="50" id="wTz-0Q-5ew">
                                         <rect key="frame" x="0.0" y="377" width="375" height="50"/>
@@ -405,7 +412,11 @@
                             <outlet property="delegate" destination="Cgq-Fs-riD" id="YUB-ps-eqx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Account" id="4CT-Dt-W5P"/>
+                    <navigationItem key="navigationItem" title="My Account" id="4CT-Dt-W5P">
+                        <barButtonItem key="backBarButtonItem" title="Quay lại" id="VPd-N0-HPM">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailLabel" destination="b0I-kV-lBs" id="em6-hy-ezO"/>
                     </connections>
@@ -413,6 +424,108 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiu-jV-dAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2917.5999999999999" y="3576.1619190404799"/>
+        </scene>
+        <!--Change Password-->
+        <scene sceneID="L8G-0R-ad7">
+            <objects>
+                <tableViewController id="0tG-3D-E8e" customClass="ChangePasswordTableViewController" customModule="MoneyLover" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="50" sectionFooterHeight="18" id="csy-Ri-ZBP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="TFK-1c-Hx8">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="OyS-b5-aHY">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OyS-b5-aHY" id="LXc-gf-IId">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mật khẩu cũ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AHF-Vu-1C0">
+                                                    <rect key="frame" x="17" y="-1" width="341" height="44"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="AHF-Vu-1C0" firstAttribute="height" secondItem="LXc-gf-IId" secondAttribute="height" id="9qQ-BK-Rxk"/>
+                                                <constraint firstItem="AHF-Vu-1C0" firstAttribute="centerY" secondItem="LXc-gf-IId" secondAttribute="centerY" id="JJI-CH-5Nt"/>
+                                                <constraint firstItem="AHF-Vu-1C0" firstAttribute="centerX" secondItem="LXc-gf-IId" secondAttribute="centerX" id="QRA-HU-nvj"/>
+                                                <constraint firstItem="AHF-Vu-1C0" firstAttribute="width" secondItem="LXc-gf-IId" secondAttribute="width" multiplier="10:11" id="nJn-83-7ci"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jWv-m5-PDW">
+                                        <rect key="frame" x="0.0" y="79" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jWv-m5-PDW" id="jYQ-Cn-4Mp">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mật khẩu mới" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGy-7J-Gvn">
+                                                    <rect key="frame" x="17" y="-1" width="341" height="44"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cGy-7J-Gvn" firstAttribute="centerX" secondItem="jYQ-Cn-4Mp" secondAttribute="centerX" id="70h-e4-qOI"/>
+                                                <constraint firstItem="cGy-7J-Gvn" firstAttribute="height" secondItem="jYQ-Cn-4Mp" secondAttribute="height" id="Dsd-JD-vwj"/>
+                                                <constraint firstItem="cGy-7J-Gvn" firstAttribute="width" secondItem="jYQ-Cn-4Mp" secondAttribute="width" multiplier="10:11" id="WgL-5K-N1k"/>
+                                                <constraint firstItem="cGy-7J-Gvn" firstAttribute="centerY" secondItem="jYQ-Cn-4Mp" secondAttribute="centerY" id="w7c-4I-JiQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="PP6-aS-m2K">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cjc-CW-GTP">
+                                        <rect key="frame" x="0.0" y="191" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cjc-CW-GTP" id="I7C-ya-Aug">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0s-N3-9pM">
+                                                    <rect key="frame" x="-0.5" y="8" width="375" height="30"/>
+                                                    <state key="normal" title="Lưu mật khẩu mới">
+                                                        <color key="titleColor" red="0.1176470588" green="0.73725490199999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="saveAction:" destination="0tG-3D-E8e" eventType="touchUpInside" id="NKm-gY-lAC"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="k0s-N3-9pM" firstAttribute="width" secondItem="I7C-ya-Aug" secondAttribute="width" id="1tm-6f-fFM"/>
+                                                <constraint firstItem="k0s-N3-9pM" firstAttribute="centerX" secondItem="I7C-ya-Aug" secondAttribute="centerX" id="jjv-F5-hS4"/>
+                                                <constraint firstItem="k0s-N3-9pM" firstAttribute="centerY" secondItem="I7C-ya-Aug" secondAttribute="centerY" constant="1.5" id="thz-E7-fZ1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="0tG-3D-E8e" id="YWh-dJ-1HY"/>
+                            <outlet property="delegate" destination="0tG-3D-E8e" id="Fap-HD-2kH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Change Password" id="4TD-d5-21a"/>
+                    <connections>
+                        <outlet property="newPasswordLabel" destination="cGy-7J-Gvn" id="GTi-GQ-gIG"/>
+                        <outlet property="oldPasswordLabel" destination="AHF-Vu-1C0" id="bKk-mp-OQq"/>
+                        <outlet property="saveButton" destination="k0s-N3-9pM" id="gnW-if-w0V"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oD3-Gf-Klr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5129" y="3491"/>
         </scene>
     </scenes>
     <resources>

@@ -100,4 +100,31 @@ class UserManager: NSObject {
         NSUserDefaults.standardUserDefaults().removeObjectForKey("userID")
         NSUserDefaults.standardUserDefaults().synchronize()
     }
+    
+    func changePassword(oldPassword: String, newPassword: String) -> Bool {
+        guard let userID = NSUserDefaults.standardUserDefaults().stringForKey("userID") else {
+            return false
+        }
+        self.logout()
+        let listUser = dataStored.fetchRecordsForEntity("User", inManagedObjectContext: managedObjectContext)
+        for users in listUser {
+            if let user = users as? User {
+                if userID == user.email {
+                    if user.password == oldPassword {
+                        user.password = newPassword
+                        do {
+                            try managedObjectContext.save()
+                            NSUserDefaults.standardUserDefaults().setValue(userID, forKey: "userID")
+                            return true
+                        } catch {
+                            return false
+                        }
+                    } else {
+                        return false
+                    }
+                }
+            }
+        }
+        return false
+    }
 }
