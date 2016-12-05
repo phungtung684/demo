@@ -8,74 +8,57 @@
 
 import UIKit
 
-class AddCategoryViewController: UIViewController {
+class AddCategoryViewController: UITableViewController {
     
-    @IBOutlet weak var tableView: UITableView!
-    let listCellViewAddCategory = DataViewAddCategory()
-    var nameIcon: String?
+    @IBOutlet weak var typeCategorySegmentedControl: UISegmentedControl!
+    @IBOutlet weak var inputNameTextField: UITextField!
+    @IBOutlet weak var iconCategoryImageView: UIImageView!
+    var category = CategoryModel()
+    var categoryManager = CategoryManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "New Category"
-        tableView?.delegate = self
-        tableView?.dataSource = self
         let buttonSave = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Save, target: self, action: #selector(saveAction))
         let buttonCancel = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Cancel, target: self, action: #selector(cancelAction))
         navigationItem.rightBarButtonItem = buttonSave
         navigationItem.leftBarButtonItem = buttonCancel
+        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:#selector(imageTapped))
+        iconCategoryImageView?.userInteractionEnabled = true
+        iconCategoryImageView?.addGestureRecognizer(tapGestureRecognizer)
     }
     
-    @objc private func saveAction() {
-    }
-    
-    @objc private func cancelAction() {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-}
-
-extension AddCategoryViewController: UITableViewDataSource {
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listCellViewAddCategory.dataViewCategory.count
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let viewCategory = listCellViewAddCategory.dataViewCategory[indexPath.row]
-        let cell = tableView.dequeueReusableCellWithIdentifier(viewCategory.cellIdentifier, forIndexPath: indexPath)
-        if let cellCategory = cell as? InputCategoryCell {
-            cellCategory.configCellWithContent(nameIcon)
-            cellCategory.chooseIconCategoryButton.addTarget(self, action: #selector(chooseIcon), forControlEvents: UIControlEvents.TouchUpInside)
-        }
-        return cell
-    }
-    
-    @objc private func chooseIcon() {
+    func imageTapped() {
         if let chooseIcon = self.storyboard?.instantiateViewControllerWithIdentifier("ShowIconViewController") as? ShowIconViewController {
             chooseIcon.delegate = self
             self.navigationController?.pushViewController(chooseIcon, animated: true)
         }
     }
-}
-
-extension AddCategoryViewController: UITableViewDelegate {
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let dataCell = listCellViewAddCategory.dataViewCategory[indexPath.row]
-        return dataCell.heighForCell
+    @objc private func saveAction() {
+        if let nameCategory = self.inputNameTextField?.text, let typeCategory = self.typeCategorySegmentedControl?.selectedSegmentIndex {
+            category.nameCategory = nameCategory
+            category.typeCategory = typeCategory
+            if categoryManager.checkCategoryExisted(nameCategory) {
+                presentAlertWithTitle("Error", message: "Category was existed")
+            } else {
+                if categoryManager.addCategory(category) {
+                    presentAlertWithTitle("OK", message: "Completed add category")
+                } else {
+                    presentAlertWithTitle("Error", message: "Can't add category.")
+                }
+            }
+        }
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    @objc private func cancelAction() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 
 extension AddCategoryViewController: ChooseIconDelegate {
     func didChooseIcon(nameIcon: String) {
-        self.nameIcon = nameIcon
-        self.tableView?.reloadData()
+        category.iconCategory = nameIcon
+        self.iconCategoryImageView?.image = UIImage(named: nameIcon)
     }
 }
