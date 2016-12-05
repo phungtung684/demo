@@ -28,6 +28,12 @@ class ChangePasswordTableViewController: UITableViewController {
         if oldPasswordLabel.text != "" {
             if checkTextFields(newPasswordLabel.text ?? "") {
                 if userManager.changePassword(oldPasswordLabel?.text ?? "", newPassword: newPasswordLabel?.text ?? "") {
+                    let alertController = UIAlertController(title: NSLocalizedString("AlertTitleMessage", comment: ""), message: NSLocalizedString("MessageAlertChangePasswordSuccess", comment: ""), preferredStyle: .Alert)
+                    let okAction = UIAlertAction(title: NSLocalizedString("ButtonTitleOK", comment: ""), style: .Default) { (oktaction) in
+                        self.showLoginStoryboard()
+                    }
+                    alertController.addAction(okAction)
+                    self.presentViewController(alertController, animated: true, completion: nil)
                 } else {
                     let alertController = UIAlertController(title: NSLocalizedString("LogoutConfirmTitle", comment: ""), message: NSLocalizedString("AlertWrongPasswordMessage", comment: ""), preferredStyle: .Alert)
                     let okAction = UIAlertAction(title: NSLocalizedString("ButtonTitleOK", comment: ""), style: .Default, handler: nil)
@@ -55,6 +61,17 @@ class ChangePasswordTableViewController: UITableViewController {
             return false
         } else {
             return true
+        }
+    }
+    
+    private func showLoginStoryboard() {
+        if let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate {
+            let mainStoryboard = UIStoryboard(name: "Login", bundle: nil)
+            if let loginVC = mainStoryboard.instantiateViewControllerWithIdentifier("LoginViewController") as? LoginViewController {
+                appDelegate.window?.rootViewController = loginVC
+                LoadingIndicatorView.hide()
+                appDelegate.window?.makeKeyAndVisible()
+            }
         }
     }
 }

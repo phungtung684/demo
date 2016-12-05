@@ -33,4 +33,20 @@ class DataStored: NSObject {
         }
         return result
     }
+    
+    func fetchEmailPredicate(entity: String, email: String, inManagedObjectContext managedObjectContext: NSManagedObjectContext) -> [NSManagedObject] {
+        let fetchRequest = NSFetchRequest(entityName: entity)
+        let emailPredicate = NSPredicate(format: "email == %@", email)
+        fetchRequest.predicate = emailPredicate
+        var result = [NSManagedObject]()
+        do {
+            let records = try managedObjectContext.executeFetchRequest(fetchRequest)
+            if let records = records as? [NSManagedObject] {
+                result = records
+            }
+        } catch {
+            print("Unable to fetch managed objects for entity \(entity).")
+        }
+        return result
+    }
 }

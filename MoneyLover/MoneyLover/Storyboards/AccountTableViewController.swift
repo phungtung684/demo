@@ -9,9 +9,10 @@
 import UIKit
 
 class AccountTableViewController: UITableViewController {
-
+    
     @IBOutlet weak var emailLabel: UILabel!
     var userManager = UserManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = NSLocalizedString("TitleAccount", comment: "")
@@ -21,7 +22,7 @@ class AccountTableViewController: UITableViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .Done, target: self, action: nil)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -46,6 +47,21 @@ class AccountTableViewController: UITableViewController {
                 appDelegate.window?.rootViewController = loginVC
                 LoadingIndicatorView.hide()
                 appDelegate.window?.makeKeyAndVisible()
+            }
+        }
+    }
+    
+    private func showCategoryViewController() {
+        let mainStoryboard = UIStoryboard(name: "AddTransaction", bundle: nil)
+        if let addTransactionVC = mainStoryboard.instantiateViewControllerWithIdentifier("AddTransactionViewController") as? AddTransactionViewController {
+            self.navigationController?.pushViewController(addTransactionVC, animated: true)
+        }
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.section == 1 {
+            if indexPath.row == 1 {
+                self.showCategoryViewController()
             }
         }
     }

@@ -23,7 +23,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         super.viewDidLoad()
         setupView()
         GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().delegate = self        
     }
     
     override func viewWillAppear(animated: Bool) {
