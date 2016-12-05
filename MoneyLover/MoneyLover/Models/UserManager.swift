@@ -14,15 +14,11 @@ class UserManager: NSObject {
     var dataStored = DataStored()
     
     func checkUserExisted(email: String) -> Bool {
-        let listUser = dataStored.fetchRecordsForEntity("User", inManagedObjectContext: managedObjectContext)
-        for users in listUser {
-            if let user = users as? User {
-                if user.email == email {
-                    return true
-                }
-            }
+        let listUser = dataStored.fetchEmailPredicate("User", email: email, inManagedObjectContext: managedObjectContext)
+        if listUser.count == 0 {
+            return false
         }
-        return false
+        return true
     }
     
     func checkUserLogin(email: String, password: String) -> Bool {
