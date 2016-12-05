@@ -23,7 +23,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         super.viewDidLoad()
         setupView()
         GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().delegate = self        
+        GIDSignIn.sharedInstance().delegate = self
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -67,7 +67,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
                 if let userFb = result as? [String: String] {
                     let email =  userFb["email"] ?? ""
                     if self.userManager.checkUserExisted(email) {
-                        if self.userManager.checkUserLoginSosial(email) {
+                        if self.userManager.checkUserLoginSocial(email) {
                             self.showMainStoryboard()
                         }
                     } else {
@@ -121,7 +121,7 @@ extension LoginViewController: GIDSignInDelegate {
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
         if error == nil {
             if self.userManager.checkUserExisted(user.profile.email) {
-                if self.userManager.checkUserLoginSosial(user.profile.email) {
+                if self.userManager.checkUserLoginSocial(user.profile.email) {
                     self.showMainStoryboard()
                 }
             } else {

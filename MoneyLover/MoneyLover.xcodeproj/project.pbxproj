@@ -33,6 +33,7 @@
 		1418E79F1DF56A3500B0300C /* AddWalletTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1418E79E1DF56A3500B0300C /* AddWalletTableViewController.swift */; };
 		1418E7A01DF56B8900B0300C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1418E7A21DF56B8900B0300C /* Main.storyboard */; };
 		1418E7A71DF56D6A00B0300C /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1418E7A61DF56D6A00B0300C /* AccountTableViewController.swift */; };
+		142B306E1DF5F06100BBBEA6 /* WalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B306D1DF5F06000BBBEA6 /* WalletTableViewCell.swift */; };
 		142D3F531DE58C40007E2C77 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D3F521DE58C40007E2C77 /* SplashScreen.swift */; };
 		143BD1021DE7399D00764D2F /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BD1011DE7399D00764D2F /* TransactionsViewController.swift */; };
 		144FEF571DE6C13D0078BAB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 144FEF561DE6C13D0078BAB4 /* GoogleService-Info.plist */; };
@@ -53,6 +54,7 @@
 		1461FBFF1DF4FC70006F02E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1461FC011DF4FC70006F02E0 /* Localizable.strings */; };
 		1461FC061DF51E13006F02E0 /* ChooseWalletTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461FC051DF51E13006F02E0 /* ChooseWalletTableViewController.swift */; };
 		1461FC081DF52058006F02E0 /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461FC071DF52058006F02E0 /* WalletManager.swift */; };
+		146301DA1DF58AFA00237775 /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146301D91DF58AFA00237775 /* WalletModel.swift */; };
 		146D72761DED116500ED05F7 /* OverViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146D72741DED116500ED05F7 /* OverViewTableViewCell.swift */; };
 		146D72771DED116500ED05F7 /* OverViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 146D72751DED116500ED05F7 /* OverViewTableViewCell.xib */; };
 		146D727A1DED194000ED05F7 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146D72781DED194000ED05F7 /* TransactionTableViewCell.swift */; };
@@ -99,6 +101,7 @@
 		1418E7A51DF56C4000B0300C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1418E7A61DF56D6A00B0300C /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
 		1418E7A91DF56E4800B0300C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		142B306D1DF5F06000BBBEA6 /* WalletTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletTableViewCell.swift; sourceTree = "<group>"; };
 		142D3F521DE58C40007E2C77 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		143BD1011DE7399D00764D2F /* TransactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		143BD1031DE73B1B00764D2F /* MoneyLover-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoneyLover-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -124,6 +127,7 @@
 		1461FC021DF4FC7B006F02E0 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1461FC051DF51E13006F02E0 /* ChooseWalletTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseWalletTableViewController.swift; sourceTree = "<group>"; };
 		1461FC071DF52058006F02E0 /* WalletManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletManager.swift; sourceTree = "<group>"; };
+		146301D91DF58AFA00237775 /* WalletModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
 		146D72741DED116500ED05F7 /* OverViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverViewTableViewCell.swift; sourceTree = "<group>"; };
 		146D72751DED116500ED05F7 /* OverViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverViewTableViewCell.xib; sourceTree = "<group>"; };
 		146D72781DED194000ED05F7 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
@@ -243,6 +247,7 @@
 				142D3F521DE58C40007E2C77 /* SplashScreen.swift */,
 				0890DCE81DE6C1ED007FD3B5 /* DataStored.swift */,
 				084471E91DF4F91B00F80D46 /* CategoryModel.swift */,
+				146301D91DF58AFA00237775 /* WalletModel.swift */,
 				0890DCE61DE6C1AB007FD3B5 /* CoreDataManager.swift */,
 				0890DCEC1DE6EF35007FD3B5 /* UserManager.swift */,
 				089491601DEC122600619E11 /* ViewAddTransaction.swift */,
@@ -313,6 +318,7 @@
 				146D727C1DED197000ED05F7 /* HeaderTransactionSection.swift */,
 				146D727E1DED19B300ED05F7 /* HeaderTransactionSection.xib */,
 				08601B1C1DEED0D8004EF0F3 /* ChooseIconColectionViewCell.swift */,
+				142B306D1DF5F06000BBBEA6 /* WalletTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -496,6 +502,7 @@
 				1459356C1DE68A1D004BC748 /* CustomView.swift in Sources */,
 				1458386E1DE83BFA00FB269A /* AddNewTransactionViewController.swift in Sources */,
 				146D727A1DED194000ED05F7 /* TransactionTableViewCell.swift in Sources */,
+				146301DA1DF58AFA00237775 /* WalletModel.swift in Sources */,
 				146D727D1DED197000ED05F7 /* HeaderTransactionSection.swift in Sources */,
 				146D72761DED116500ED05F7 /* OverViewTableViewCell.swift in Sources */,
 				0890DCEB1DE6C2BF007FD3B5 /* CheckValidateTextField.swift in Sources */,
@@ -533,6 +540,7 @@
 				1461FC061DF51E13006F02E0 /* ChooseWalletTableViewController.swift in Sources */,
 				08F6528C1DED57FD008A116D /* NoteCell.swift in Sources */,
 				14DA31321DE41EF7003D8390 /* MoneyLover.xcdatamodeld in Sources */,
+				142B306E1DF5F06100BBBEA6 /* WalletTableViewCell.swift in Sources */,
 				145935761DE68A82004BC748 /* Category+CoreDataProperties.swift in Sources */,
 				1418E79F1DF56A3500B0300C /* AddWalletTableViewController.swift in Sources */,
 				08601B1D1DEED0D8004EF0F3 /* ChooseIconColectionViewCell.swift in Sources */,
@@ -689,7 +697,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5K84G7UAYU;
 				INFOPLIST_FILE = MoneyLover/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Framgia.MoneyLover;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -709,7 +717,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5K84G7UAYU;
 				INFOPLIST_FILE = MoneyLover/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Framgia.MoneyLover;
 				PRODUCT_NAME = "$(TARGET_NAME)";

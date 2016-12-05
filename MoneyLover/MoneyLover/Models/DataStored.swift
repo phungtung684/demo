@@ -34,9 +34,9 @@ class DataStored: NSObject {
         return result
     }
     
-    func fetchEmailPredicate(entity: String, email: String, inManagedObjectContext managedObjectContext: NSManagedObjectContext) -> [NSManagedObject] {
+    func fetchAttributePredicate(entity: String, attribute: String, stringPredicate: String, inManagedObjectContext managedObjectContext: NSManagedObjectContext) -> [NSManagedObject] {
         let fetchRequest = NSFetchRequest(entityName: entity)
-        let emailPredicate = NSPredicate(format: "email == %@", email)
+        let emailPredicate = NSPredicate(format: "%K == %@", attribute, stringPredicate)
         fetchRequest.predicate = emailPredicate
         var result = [NSManagedObject]()
         do {
