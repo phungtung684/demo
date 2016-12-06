@@ -27,15 +27,15 @@
     <entity name="Wallet" representedClassName=".Wallet" syncable="YES">
         <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="idWallet" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="idWallet" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="transactionWithWallet" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Transaction" inverseName="walletWithTransaction" inverseEntity="Transaction" syncable="YES"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="wallet" inverseEntity="User" syncable="YES"/>
     </entity>
     <elements>
-        <element name="User" positionX="-135" positionY="261" width="128" height="118"/>
-        <element name="Wallet" positionX="-137" positionY="63" width="128" height="133"/>
         <element name="Category" positionX="198" positionY="63" width="128" height="118"/>
         <element name="Transaction" positionX="25" positionY="63" width="128" height="163"/>
+        <element name="User" positionX="-135" positionY="261" width="128" height="118"/>
+        <element name="Wallet" positionX="-137" positionY="63" width="128" height="135"/>
     </elements>
 </model>

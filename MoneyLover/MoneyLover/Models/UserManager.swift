@@ -12,9 +12,11 @@ class UserManager: NSObject {
     
     lazy var managedObjectContext = CoreDataManager().managedObjectContext
     var dataStored = DataStored()
+    var walletManager = WalletManager()
+    var listWalletAvailable = ListWalletAvalable()
     
     func checkUserExisted(email: String) -> Bool {
-        let listUser = dataStored.fetchEmailPredicate("User", email: email, inManagedObjectContext: managedObjectContext)
+        let listUser = dataStored.fetchAttributePredicate("User", attribute: "email", stringPredicate: email, inManagedObjectContext: managedObjectContext)
         if listUser.count == 0 {
             return false
         }
@@ -60,6 +62,7 @@ class UserManager: NSObject {
     func addUserFromSocial(email: String) -> Bool {
         if let user = dataStored.createRecordForEntity("User", inManagedObjectContext: managedObjectContext) as? User {
             user.email = email
+            NSUserDefaults.standardUserDefaults().setValue(user.email, forKey: "userID")
             do {
                 try managedObjectContext.save()
                 return true
@@ -70,7 +73,13 @@ class UserManager: NSObject {
         return false
     }
     
-    func checkUserLoginSosial(email: String) -> Bool {
+    func createWalletDefaultForRegister() {
+        for wallet in listWalletAvailable.listWallet {
+            walletManager.addWalletAvailable(wallet)
+        }
+    }
+    
+    func checkUserLoginSocial(email: String) -> Bool {
         let listUser = dataStored.fetchRecordsForEntity("User", inManagedObjectContext: managedObjectContext)
         for users in listUser {
             if let user = users as? User {

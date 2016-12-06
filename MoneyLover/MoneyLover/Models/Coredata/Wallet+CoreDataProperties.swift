@@ -11,7 +11,7 @@ import CoreData
 
 extension Wallet {
 
-    @NSManaged var idWallet: NSNumber?
+    @NSManaged var idWallet: String?
     @NSManaged var amount: NSNumber?
     @NSManaged var name: String?
     @NSManaged var icon: String?
