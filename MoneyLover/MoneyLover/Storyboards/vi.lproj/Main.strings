@@ -1,0 +1,75 @@
+
+/* Class = "UINavigationItem"; title = "Transactions"; ObjectID = "0ev-Zv-fN9"; */
+"0ev-Zv-fN9.title" = "Transactions";
+
+/* Class = "UITabBarItem"; title = "Tài khoản"; ObjectID = "1Rb-CP-cCb"; */
+"1Rb-CP-cCb.title" = "Tài khoản";
+
+/* Class = "UINavigationItem"; title = "My Account"; ObjectID = "4CT-Dt-W5P"; */
+"4CT-Dt-W5P.title" = "My Account";
+
+/* Class = "UINavigationItem"; title = "Change Password"; ObjectID = "4TD-d5-21a"; */
+"4TD-d5-21a.title" = "Change Password";
+
+/* Class = "UITabBarItem"; title = "Thêm giao dịch"; ObjectID = "67g-KV-TOa"; */
+"67g-KV-TOa.title" = "Thêm giao dịch";
+
+/* Class = "UITabBarItem"; title = "Báo cáo"; ObjectID = "6OS-e5-q8m"; */
+"6OS-e5-q8m.title" = "Báo cáo";
+
+/* Class = "UIButton"; normalTitle = "Tương lai"; ObjectID = "8gi-ub-ZB9"; */
+"8gi-ub-ZB9.normalTitle" = "Tương lai";
+
+/* Class = "UITextField"; placeholder = "Mật khẩu cũ"; ObjectID = "AHF-Vu-1C0"; */
+"AHF-Vu-1C0.placeholder" = "Mật khẩu cũ";
+
+/* Class = "UINavigationItem"; title = "Chart"; ObjectID = "AW9-jo-I7x"; */
+"AW9-jo-I7x.title" = "Chart";
+
+/* Class = "UITabBarItem"; title = "Lập kế hoạch"; ObjectID = "DEJ-Ng-7mh"; */
+"DEJ-Ng-7mh.title" = "Lập kế hoạch";
+
+/* Class = "UIButton"; normalTitle = "Tháng trước"; ObjectID = "KNR-5E-KNt"; */
+"KNR-5E-KNt.normalTitle" = "Tháng trước";
+
+/* Class = "UIBarButtonItem"; title = "Thêm"; ObjectID = "LEG-Hq-xNU"; */
+"LEG-Hq-xNU.title" = "Thêm";
+
+/* Class = "UIButton"; normalTitle = "Đăng xuất"; ObjectID = "LTM-wx-oU5"; */
+"LTM-wx-oU5.normalTitle" = "Đăng xuất";
+
+/* Class = "UILabel"; text = "Ví của tôi"; ObjectID = "Pdt-ea-0BS"; */
+"Pdt-ea-0BS.text" = "Ví của tôi";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "TBp-ea-R00"; */
+"TBp-ea-R00.title" = "Title";
+
+/* Class = "UIBarButtonItem"; title = "Quay lại"; ObjectID = "VPd-N0-HPM"; */
+"VPd-N0-HPM.title" = "Quay lại";
+
+/* Class = "UIButton"; normalTitle = "Tháng này"; ObjectID = "XBV-rZ-wJF"; */
+"XBV-rZ-wJF.normalTitle" = "Tháng này";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "YkY-04-rUO"; */
+"YkY-04-rUO.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Mật khẩu mới"; ObjectID = "cGy-7J-Gvn"; */
+"cGy-7J-Gvn.placeholder" = "Mật khẩu mới";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "czx-NN-Jvb"; */
+"czx-NN-Jvb.title" = "Item";
+
+/* Class = "UINavigationItem"; title = "Add new Transaction"; ObjectID = "eBc-vO-iLp"; */
+"eBc-vO-iLp.title" = "Add new Transaction";
+
+/* Class = "UIButton"; normalTitle = "Lưu mật khẩu mới"; ObjectID = "k0s-N3-9pM"; */
+"k0s-N3-9pM.normalTitle" = "Lưu mật khẩu mới";
+
+/* Class = "UILabel"; text = "Thay đổi mật khẩu"; ObjectID = "psV-Ih-wfY"; */
+"psV-Ih-wfY.text" = "Thay đổi mật khẩu";
+
+/* Class = "UILabel"; text = "Nhóm"; ObjectID = "puZ-Sj-l0F"; */
+"puZ-Sj-l0F.text" = "Nhóm";
+
+/* Class = "UITabBarItem"; title = "Sổ giao dịch"; ObjectID = "u4Q-zf-K3L"; */
+"u4Q-zf-K3L.title" = "Sổ giao dịch";

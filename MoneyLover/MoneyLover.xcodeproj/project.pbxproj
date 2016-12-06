@@ -30,8 +30,10 @@
 		08F652A01DED73B6008A116D /* ShowCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F6529F1DED73B6008A116D /* ShowCategoryViewController.swift */; };
 		08F652A21DED9167008A116D /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652A11DED9167008A116D /* AddCategoryViewController.swift */; };
 		08F652AA1DED9EB4008A116D /* ShowCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F652A91DED9EB4008A116D /* ShowCategoryTableViewCell.swift */; };
+		1418E79F1DF56A3500B0300C /* AddWalletTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1418E79E1DF56A3500B0300C /* AddWalletTableViewController.swift */; };
+		1418E7A01DF56B8900B0300C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1418E7A21DF56B8900B0300C /* Main.storyboard */; };
+		1418E7A71DF56D6A00B0300C /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1418E7A61DF56D6A00B0300C /* AccountTableViewController.swift */; };
 		142D3F531DE58C40007E2C77 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D3F521DE58C40007E2C77 /* SplashScreen.swift */; };
-		143BD1001DE7377900764D2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143BD0FF1DE7377900764D2F /* Main.storyboard */; };
 		143BD1021DE7399D00764D2F /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BD1011DE7399D00764D2F /* TransactionsViewController.swift */; };
 		144FEF571DE6C13D0078BAB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 144FEF561DE6C13D0078BAB4 /* GoogleService-Info.plist */; };
 		144FEF5A1DE6C88E0078BAB4 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144FEF591DE6C88E0078BAB4 /* LoadingIndicatorView.swift */; };
@@ -47,7 +49,6 @@
 		1459357B1DE68A82004BC748 /* Wallet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145935731DE68A82004BC748 /* Wallet+CoreDataClass.swift */; };
 		1459357C1DE68A82004BC748 /* Wallet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145935741DE68A82004BC748 /* Wallet+CoreDataProperties.swift */; };
 		145FAB291DF10F2700D71E9B /* DataViewAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145FAB281DF10F2700D71E9B /* DataViewAccount.swift */; };
-		145FAB2B1DF1109800D71E9B /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145FAB2A1DF1109800D71E9B /* AccountTableViewController.swift */; };
 		145FAB311DF1504000D71E9B /* ChangePasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145FAB301DF1504000D71E9B /* ChangePasswordTableViewController.swift */; };
 		1461FBFF1DF4FC70006F02E0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1461FC011DF4FC70006F02E0 /* Localizable.strings */; };
 		1461FC061DF51E13006F02E0 /* ChooseWalletTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1461FC051DF51E13006F02E0 /* ChooseWalletTableViewController.swift */; };
@@ -93,8 +94,12 @@
 		08F6529F1DED73B6008A116D /* ShowCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCategoryViewController.swift; sourceTree = "<group>"; };
 		08F652A11DED9167008A116D /* AddCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
 		08F652A91DED9EB4008A116D /* ShowCategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		1418E79E1DF56A3500B0300C /* AddWalletTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWalletTableViewController.swift; sourceTree = "<group>"; };
+		1418E7A41DF56B8D00B0300C /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
+		1418E7A51DF56C4000B0300C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1418E7A61DF56D6A00B0300C /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
+		1418E7A91DF56E4800B0300C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		142D3F521DE58C40007E2C77 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
-		143BD0FF1DE7377900764D2F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		143BD1011DE7399D00764D2F /* TransactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		143BD1031DE73B1B00764D2F /* MoneyLover-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoneyLover-Bridging-Header.h"; sourceTree = "<group>"; };
 		144FEF561DE6C13D0078BAB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -112,7 +117,6 @@
 		145935731DE68A82004BC748 /* Wallet+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Wallet+CoreDataClass.swift"; sourceTree = "<group>"; };
 		145935741DE68A82004BC748 /* Wallet+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Wallet+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		145FAB281DF10F2700D71E9B /* DataViewAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewAccount.swift; sourceTree = "<group>"; };
-		145FAB2A1DF1109800D71E9B /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountTableViewController.swift; path = ../Storyboards/AccountTableViewController.swift; sourceTree = "<group>"; };
 		145FAB301DF1504000D71E9B /* ChangePasswordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordTableViewController.swift; sourceTree = "<group>"; };
 		1461FBFD1DF4FC3B006F02E0 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		1461FBFE1DF4FC3B006F02E0 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Login.strings; sourceTree = "<group>"; };
@@ -222,11 +226,12 @@
 				08F6529F1DED73B6008A116D /* ShowCategoryViewController.swift */,
 				08F652A11DED9167008A116D /* AddCategoryViewController.swift */,
 				149C11921DE744BA0067AAE7 /* ReportViewController.swift */,
-				145FAB2A1DF1109800D71E9B /* AccountTableViewController.swift */,
 				08601B1A1DEEC692004EF0F3 /* ShowIconViewController.swift */,
 				145FAB301DF1504000D71E9B /* ChangePasswordTableViewController.swift */,
 				08599B7D1DF17E55003629F8 /* ListEditCategoryViewController.swift */,
 				1461FC051DF51E13006F02E0 /* ChooseWalletTableViewController.swift */,
+				1418E79E1DF56A3500B0300C /* AddWalletTableViewController.swift */,
+				1418E7A61DF56D6A00B0300C /* AccountTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -243,7 +248,6 @@
 				089491601DEC122600619E11 /* ViewAddTransaction.swift */,
 				145FAB281DF10F2700D71E9B /* DataViewAccount.swift */,
 				08599B791DF12733003629F8 /* CategoryManager.swift */,
-				08599B7B1DF12E60003629F8 /* CategoryModel.swift */,
 				1461FC071DF52058006F02E0 /* WalletManager.swift */,
 				1461FC011DF4FC70006F02E0 /* Localizable.strings */,
 			);
@@ -280,7 +284,7 @@
 				14DA312A1DE41EF7003D8390 /* LaunchScreen.storyboard */,
 				14DA312C1DE41EF7003D8390 /* Login.storyboard */,
 				089491561DEBD35A00619E11 /* AddTransaction.storyboard */,
-				143BD0FF1DE7377900764D2F /* Main.storyboard */,
+				1418E7A21DF56B8900B0300C /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -404,7 +408,7 @@
 				089491571DEBD35A00619E11 /* AddTransaction.storyboard in Resources */,
 				14DA31381DE42051003D8390 /* Login.storyboard in Resources */,
 				146D727F1DED19B300ED05F7 /* HeaderTransactionSection.xib in Resources */,
-				143BD1001DE7377900764D2F /* Main.storyboard in Resources */,
+				1418E7A01DF56B8900B0300C /* Main.storyboard in Resources */,
 				144FEF571DE6C13D0078BAB4 /* GoogleService-Info.plist in Resources */,
 				1461FBFF1DF4FC70006F02E0 /* Localizable.strings in Resources */,
 				14DA31371DE4204D003D8390 /* LaunchScreen.storyboard in Resources */,
@@ -498,7 +502,6 @@
 				08F652A01DED73B6008A116D /* ShowCategoryViewController.swift in Sources */,
 				08F652921DED585B008A116D /* LocationCell.swift in Sources */,
 				0890DCE71DE6C1AB007FD3B5 /* CoreDataManager.swift in Sources */,
-				145FAB2B1DF1109800D71E9B /* AccountTableViewController.swift in Sources */,
 				1461FC081DF52058006F02E0 /* WalletManager.swift in Sources */,
 				1459357A1DE68A82004BC748 /* User+CoreDataProperties.swift in Sources */,
 				089491591DEBD3BA00619E11 /* AddTransactionViewController.swift in Sources */,
@@ -509,6 +512,7 @@
 				08F6528A1DED5780008A116D /* CategoryCell.swift in Sources */,
 				084471EA1DF4F91B00F80D46 /* CategoryModel.swift in Sources */,
 				143BD1021DE7399D00764D2F /* TransactionsViewController.swift in Sources */,
+				1418E7A71DF56D6A00B0300C /* AccountTableViewController.swift in Sources */,
 				149C11931DE744BA0067AAE7 /* ReportViewController.swift in Sources */,
 				144FEF5A1DE6C88E0078BAB4 /* LoadingIndicatorView.swift in Sources */,
 				145935751DE68A82004BC748 /* Category+CoreDataClass.swift in Sources */,
@@ -530,6 +534,7 @@
 				08F6528C1DED57FD008A116D /* NoteCell.swift in Sources */,
 				14DA31321DE41EF7003D8390 /* MoneyLover.xcdatamodeld in Sources */,
 				145935761DE68A82004BC748 /* Category+CoreDataProperties.swift in Sources */,
+				1418E79F1DF56A3500B0300C /* AddWalletTableViewController.swift in Sources */,
 				08601B1D1DEED0D8004EF0F3 /* ChooseIconColectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,6 +542,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1418E7A21DF56B8900B0300C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1418E7A41DF56B8D00B0300C /* vi */,
+				1418E7A51DF56C4000B0300C /* Base */,
+				1418E7A91DF56E4800B0300C /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		1461FC011DF4FC70006F02E0 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

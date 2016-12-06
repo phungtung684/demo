@@ -13,8 +13,6 @@ class ChooseWalletTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = NSLocalizedString("TitleChooseWallet", comment: "")
-        let buttonAddWallet = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: #selector(addAction))
-        navigationItem.rightBarButtonItem = buttonAddWallet
     }
 
     override func didReceiveMemoryWarning() {
