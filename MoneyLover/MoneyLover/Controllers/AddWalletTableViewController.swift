@@ -55,7 +55,9 @@ class AddWalletTableViewController: UITableViewController {
         } else {
             if  walletManager.editWallet(wallet?.idWallet ?? "", walletModel: WalletModel(name: nameWalletTextField.text ?? "", iconName: nameIcon, amount: Double(moneyTextField.text ?? "") ?? 0.0)) {
                 if let ChooseWalletTVC = self.storyboard?.instantiateViewControllerWithIdentifier("ChooseWalletTVC") as? ChooseWalletTableViewController {
-                    self.navigationController?.pushViewController(ChooseWalletTVC, animated: true)
+//                    self.navigationController?.popToRootViewControllerAnimated(true)
+//                    self.navigationController?.pushViewController(ChooseWalletTVC, animated: true)
+                    self.navigationController?.didMoveToParentViewController(ChooseWalletTVC)
                 }
             } else {
                 self.presentAlertWithTitle(NSLocalizedString("ErrorAlertTitle", comment: ""), message: NSLocalizedString("MessageAlertErrorAddWallet", comment: ""))

@@ -62,7 +62,7 @@ class AddTransactionViewController: UITableViewController {
                     transactionModel.idTransaction = (transaction.idTransaction?.integerValue)!
                     if transactionManager.editTransaction(transactionModel) {
                         self.delegate?.didSaveTransaction(transactionModel)
-                        self.dismissViewControllerAnimated(true, completion: nil)
+                        showMainStoryboard()
                     }
                 }
             } else {
@@ -88,8 +88,19 @@ class AddTransactionViewController: UITableViewController {
         }
     }
     
+    private func showMainStoryboard() {
+        if let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate {
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            if let home = mainStoryboard.instantiateViewControllerWithIdentifier("TabbarController") as? UITabBarController {
+                appDelegate.window?.rootViewController = home
+                appDelegate.window?.makeKeyAndVisible()
+                LoadingIndicatorView.hide()
+            }
+        }
+    }
+    
     @objc private func cancelAction() {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        showMainStoryboard()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
